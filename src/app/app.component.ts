@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
+import FragenBeispiel from '../assets/beispielFragen.json';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'BoardQuiz';
+  name = 'Angular ' + VERSION.major;
+
+  fragen = FragenBeispiel;
 }

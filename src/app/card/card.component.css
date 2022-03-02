@@ -1,0 +1,38 @@
+.tp-wrapper {
+  perspective: 800px;
+}
+
+.tp-box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transform: transform 1s;
+  display: flex;
+}
+.tp-box__side {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  word-wrap: break-word;
+  align-items: center;
+}
+.tp-box__front {
+  background: green;
+  transform: rotateY(0deg);
+}
+.tp-box__back {
+  background: #23262d;
+  transform: rotateY(-180deg);
+}
+.tp-box__header {
+  background: darkred;
+  transform: rotateY(0deg);
+}

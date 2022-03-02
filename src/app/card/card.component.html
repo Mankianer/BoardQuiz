@@ -1,0 +1,13 @@
+<div class="tp-wrapper">
+  <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="tp-box__side tp-box__front" *ngIf="!this.isHeader">
+      <p>{{ title }}</p>
+    </div>
+    <div class="tp-box__side tp-box__header" *ngIf="this.isHeader">
+      <p>{{ title }}</p>
+    </div>
+    <div class="tp-box__side tp-box__back">
+      <p>{{ text }}</p>
+    </div>
+  </div>
+</div>

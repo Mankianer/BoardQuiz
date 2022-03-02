@@ -1,0 +1,58 @@
+[
+  {
+    "kategorie": "Kategorie 1.",
+    "fragen": [
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"]
+    ]
+  },
+  {
+    "kategorie": "Kategorie 2",
+    "fragen": [
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"]
+    ]
+  },
+  {
+    "kategorie": "Kategorie 3",
+    "fragen": [
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"]
+    ]
+  },
+  {
+    "kategorie": "Kategorie 3",
+    "fragen": [
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"]
+    ]
+  },
+  {
+    "kategorie": "Kategorie 3",
+    "fragen": [
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"],
+      ["TitleX", "textX"]
+    ]
+  }
+]

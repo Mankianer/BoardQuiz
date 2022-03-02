@@ -1,0 +1,15 @@
+p {
+  font-family: Lato;
+}
+
+.grid-container {
+  display: table;
+  table-layout: fixed;
+  padding: 10px;
+  border-spacing: 20px;
+  overflow-x: scroll;
+}
+.grid-item {
+  padding: 5px;
+  text-align: center;
+}

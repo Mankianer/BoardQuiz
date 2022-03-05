@@ -9,6 +9,7 @@ export class GameKeeperService {
   score_red: number = 0;
   score_green: number = 0;
   score_blue: number = 0;
+  score_purple: number = 0;
 
   constructor() { }
 }

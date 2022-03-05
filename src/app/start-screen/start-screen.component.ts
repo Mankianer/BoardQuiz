@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GameKeeperService} from "../game-keeper.service";
 
 @Component({
@@ -8,7 +8,8 @@ import {GameKeeperService} from "../game-keeper.service";
 })
 export class StartScreenComponent implements OnInit {
 
-  constructor(public gameKeeper: GameKeeperService) { }
+  constructor(public gameKeeper: GameKeeperService) {
+  }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import FragenBeispiel from '../assets/beispielFragen.json';
+import {GameKeeperService} from "./game-keeper.service";
 
 @Component({
   selector: 'my-app',
@@ -9,5 +9,7 @@ import FragenBeispiel from '../assets/beispielFragen.json';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
 
-  fragen = FragenBeispiel;
+
+  constructor(public gameKeeper: GameKeeperService) {
+  }
 }

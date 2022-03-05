@@ -1,11 +1,10 @@
-.grid-container {
-  display: table;
-  table-layout: fixed;
-  padding: 10px;
-  border-spacing: 20px;
-  overflow-x: scroll;
+.playground {
+  width: 85%;
+  height: 85%;
 }
-.grid-item {
-  padding: 5px;
-  text-align: center;
+
+.scoreboard {
+  width: 15%;
+  height: 85%;
+  background-color: #23262d;
 }

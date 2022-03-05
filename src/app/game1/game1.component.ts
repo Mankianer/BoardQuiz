@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import FragenBeispiel from '../../assets/beispielFragen.json';
+
 
 @Component({
   selector: 'app-game1',
@@ -8,7 +8,6 @@ import FragenBeispiel from '../../assets/beispielFragen.json';
 })
 export class Game1Component implements OnInit {
 
-  fragen = FragenBeispiel;
 
   constructor() { }
 

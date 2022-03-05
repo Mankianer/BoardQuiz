@@ -1,0 +1,15 @@
+<div class="grid-container">
+  <div *ngFor="let c of fragen" style="width: 200px; display: table-cell">
+    <app-card
+      class="grid-item"
+      [title]="c.kategorie"
+      [isHeader]="true"
+    ></app-card>
+    <app-card
+      class="grid-item"
+      *ngFor="let f of c.fragen"
+      [title]="f[0]"
+      [text]="f[1]"
+    ></app-card>
+  </div>
+</div>

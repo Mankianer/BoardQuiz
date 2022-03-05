@@ -1,58 +1,38 @@
 [
   {
-    "kategorie": "Kategorie 1.",
+    "kategorie": "Unnützes Wissen",
     "fragen": [
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"]
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
     ]
   },
   {
-    "kategorie": "Kategorie 2",
+    "kategorie": "Film & Musik",
     "fragen": [
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"]
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
     ]
   },
   {
-    "kategorie": "Kategorie 3",
+    "kategorie": "Sport & Freizeit",
     "fragen": [
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"]
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
     ]
   },
   {
-    "kategorie": "Kategorie 3",
+    "kategorie": "Allgemeinwissen",
     "fragen": [
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"]
-    ]
-  },
-  {
-    "kategorie": "Kategorie 3",
-    "fragen": [
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"],
-      ["TitleX", "textX"]
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
     ]
   }
 ]

@@ -14,10 +14,11 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import { EndScreenComponent } from './end-screen/end-screen.component';
+import { TransitionScreenComponent } from './transition-screen/transition-screen.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule],
-  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, Game3Component, EndScreenComponent],
+  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, Game3Component, EndScreenComponent, TransitionScreenComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,4 +7,29 @@
   width: 15%;
   height: 85%;
   background-color: #23262d;
+  /*float: right;*/
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
+.question {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+
+.question > p {
+  font-size: 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.game1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+

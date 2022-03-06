@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GameKeeperService} from "../../game-keeper.service";
 
 @Component({
   selector: 'app-scoreboard',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public gameKeeper: GameKeeperService) { }
 
   ngOnInit(): void {
   }

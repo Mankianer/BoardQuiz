@@ -5,7 +5,7 @@
       [title]="c.kategorie"
       [isHeader]="true"
     ></app-card>
-    <app-card (click)="game1.selectCard({title: f[0], text: f[1]})"
+    <app-card
       class="grid-item"
       *ngFor="let f of c.fragen"
       [title]="f[0]"

@@ -7,6 +7,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
+import {Game1Service} from "../game1.service";
 
 @Component({
   selector: 'app-card',
@@ -36,15 +37,21 @@ export class CardComponent implements OnInit {
   @Input() text: string = 'Hier steht dann deine Frage?';
   @Input() isHeader: boolean = false;
 
-  constructor() {}
+  constructor(public game1: Game1Service) {}
 
   ngOnInit() {}
 
   flip: string = 'inactive';
 
   toggleFlip() {
-    if (!this.isHeader) {
-      this.flip = this.flip == 'inactive' ? 'active' : 'inactive';
+    console.log(this.game1.current_Card.title)
+    if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "") {
+      this.flip = this.isFlipped() ? 'inactive' : 'active';
+      this.game1.selectCard(this);
     }
+  }
+
+  public isFlipped(): boolean{
+    return this.flip == 'active';
   }
 }

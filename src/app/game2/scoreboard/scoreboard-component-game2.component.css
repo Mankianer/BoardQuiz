@@ -1,0 +1,39 @@
+.scoreBox {
+  height: 70%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  left: 15%;
+  top: 10%;
+}
+
+.scoreBox > p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.red {
+  position: absolute;
+  left: 5%;
+  background-color: red
+}
+
+.green {
+  position: absolute;
+  left: 30%;
+  background-color: green;
+}
+
+.blue {
+  position: absolute;
+  left: 55%;
+  background-color: blue;
+}
+
+
+.purple {
+  position: absolute;
+  left: 80%;
+  background-color: purple;
+}

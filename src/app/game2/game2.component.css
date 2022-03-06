@@ -1,0 +1,21 @@
+.scoreboard {
+  height: 15%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 0;
+}
+
+.game2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 5%;
+}

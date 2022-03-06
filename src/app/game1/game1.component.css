@@ -25,6 +25,7 @@
 .question > p {
   font-size: 50px;
   text-align: center;
+  line-height: 50px;
 }
 
 .game1 {

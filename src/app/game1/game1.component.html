@@ -5,7 +5,7 @@
   <div class="scoreboard">
     <app-scoreboard></app-scoreboard>
   </div>
-  <div class="question">
-    <p>Hier steht die Frage</p>
+  <div class="question" (click)="game1.nextRound()">
+    <p>{{game1.current_Card.text}}</p>
   </div>
 </div>

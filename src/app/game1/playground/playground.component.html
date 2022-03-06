@@ -1,11 +1,11 @@
 <div class="grid-container">
-  <div *ngFor="let c of fragen" style="display: table-cell">
+  <div *ngFor="let c of game1.content" style="display: table-cell">
     <app-card
       class="grid-item"
       [title]="c.kategorie"
       [isHeader]="true"
     ></app-card>
-    <app-card
+    <app-card (click)="game1.selectCard({title: f[0], text: f[1]})"
       class="grid-item"
       *ngFor="let f of c.fragen"
       [title]="f[0]"

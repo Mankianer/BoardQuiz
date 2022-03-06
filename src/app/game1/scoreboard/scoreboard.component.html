@@ -1,14 +1,14 @@
 <div>
-  <div class="scoreBox red">
+  <div class="scoreBox red" (click)="selectRed()">
     <p>{{gameKeeper.score_red}}</p>
   </div>
-  <div class="scoreBox green">
+  <div class="scoreBox green" (click)="selectGreen()">
     <p>{{gameKeeper.score_green}}</p>
   </div>
-  <div class="scoreBox blue">
+  <div class="scoreBox blue" (click)="selectBlue()">
     <p>{{gameKeeper.score_blue}}</p>
   </div>
-  <div class="scoreBox purple">
+  <div class="scoreBox purple" (click)="selectPurple()">
     <p>{{gameKeeper.score_purple}}</p>
   </div>
 </div>

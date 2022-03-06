@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import FragenBeispiel from '../../../assets/beispielFragen.json';
+import {Game1Service} from "../game1.service";
 
 @Component({
   selector: 'app-playground',
@@ -8,9 +8,8 @@ import FragenBeispiel from '../../../assets/beispielFragen.json';
 })
 export class PlaygroundComponent implements OnInit {
 
-  fragen = FragenBeispiel;
 
-  constructor() { }
+  constructor(public game1: Game1Service) { }
 
   ngOnInit(): void {
   }

@@ -7,7 +7,7 @@
         <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'green'" (click)="selectGreen()">+10</div></div>
         <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'blue'" (click)="selectBlue()">+10</div></div>
         <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'purple'" (click)="selectPurple()">+10</div></div>
-        <div><div *ngIf="round == '' + this.game2.currentRound" (click)="selectNon()">❌</div></div>
+        <div><div *ngIf="round == '' + this.game2.currentRound && this.forceWinner == 'false'" (click)="selectNon()">❌</div></div>
       </div>
     </div>
   </div>

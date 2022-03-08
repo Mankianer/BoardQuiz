@@ -9,6 +9,7 @@ import {Game2Service} from "./game2.service";
 export class Game2Component implements OnInit {
 
   @Input("rounds") rounds = "1";
+  @Input("force-winner") forceWinner = "false";
 
   constructor(public game2: Game2Service) { }
 

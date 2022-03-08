@@ -10,6 +10,7 @@ import {GameKeeperService} from "../../game-keeper.service";
 export class RowComponent implements OnInit {
 
   @Input("round") round: string = "0";
+  @Input("force-winner") forceWinner = "false";
 
   winner = "";
 

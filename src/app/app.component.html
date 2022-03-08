@@ -2,8 +2,8 @@
   <app-start-screen *ngIf="gameKeeper.round == 0"></app-start-screen>
   <app-game1 *ngIf="gameKeeper.round == 1" ></app-game1>
   <app-game2 *ngIf="gameKeeper.round == 2" rounds="24"></app-game2>
-  <app-game2 *ngIf="gameKeeper.round == 3"></app-game2>
-  <app-game3 *ngIf="gameKeeper.round == 4"></app-game3>
+  <app-game2 *ngIf="gameKeeper.round == 3" rounds="6"></app-game2>
+  <app-game2 *ngIf="gameKeeper.round == 4" rounds="4" force-winner="true"></app-game2>
   <app-end-screen *ngIf="gameKeeper.round == 5"></app-end-screen>
   <app-transition-screen *ngIf="gameKeeper.round ==-1"></app-transition-screen>
 </div>

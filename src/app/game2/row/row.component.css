@@ -21,15 +21,32 @@
   right: 0;
   width: 80%;
   height: 100%;
+}
+
+.buttons > div {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons > div > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: olive;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
 }
 
-.buttons > div {
+.buttons > div > div > div {
   width: 100%;
   height: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.buttons > div > div > div > div {
   text-align: center;
   font-size: 30px;
   line-height: 45px;

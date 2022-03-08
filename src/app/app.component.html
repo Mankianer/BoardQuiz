@@ -1,7 +1,7 @@
 <div style="margin: auto; aspect-ratio: 4 / 3; height: 100%;">
   <app-start-screen *ngIf="gameKeeper.round == 0"></app-start-screen>
   <app-game1 *ngIf="gameKeeper.round == 1" ></app-game1>
-  <app-game2 *ngIf="gameKeeper.round == 2"></app-game2>
+  <app-game2 *ngIf="gameKeeper.round == 2" rounds="24"></app-game2>
   <app-game2 *ngIf="gameKeeper.round == 3"></app-game2>
   <app-game3 *ngIf="gameKeeper.round == 4"></app-game3>
   <app-end-screen *ngIf="gameKeeper.round == 5"></app-end-screen>

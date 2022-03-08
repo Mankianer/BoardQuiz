@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GameKeeperService} from "../../game-keeper.service";
-import {Game1Service} from "../../game1/game1.service";
 
 @Component({
   selector: 'app-scoreboard-horizontal',
@@ -9,7 +8,8 @@ import {Game1Service} from "../../game1/game1.service";
 })
 export class ScoreboardComponentGame2 implements OnInit {
 
-  constructor(public gameKeeper: GameKeeperService, public game1: Game1Service) { }
+  constructor(public gameKeeper: GameKeeperService) {
+  }
 
   ngOnInit(): void {
   }

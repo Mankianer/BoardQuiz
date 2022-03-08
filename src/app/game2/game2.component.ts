@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Game2Service} from "./game2.service";
 
 @Component({
   selector: 'app-game2',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Game2Component implements OnInit {
 
-  constructor() { }
+  @Input("rounds") rounds = "1";
+
+  constructor(public game2: Game2Service) { }
 
   ngOnInit(): void {
+    this.game2.maxRounds = Number.parseInt(this.rounds);
   }
 
+  counter() {
+    return new Array(this.game2.maxRounds);
+  }
 }

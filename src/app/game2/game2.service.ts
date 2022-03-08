@@ -13,14 +13,21 @@ export class Game2Service {
   constructor(public gameKeeper: GameKeeperService) {
   }
 
+  public reset(){
+    this.currentRound = 1;
+    this.maxRounds = 0;
+    this.pointArray = [10];
+  }
+
   public nextTurn() {
     this.currentRound++;
     if (this.currentRound > this.maxRounds) {
+      this.reset();
       this.gameKeeper.nextGame();
     }
   }
 
   public getPointsForRound(round: number): number {
-    return this.pointArray[round - 1 % this.pointArray.length]
+    return this.pointArray[(round - 1) % this.pointArray.length]
   }
 }

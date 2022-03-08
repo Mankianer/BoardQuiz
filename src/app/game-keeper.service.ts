@@ -16,7 +16,11 @@ export class GameKeeperService {
   constructor() { }
 
   public nextGame() {
-    this.next_round = this.round + 1;
-    this.round = -1;
+    if( this.round == -1){
+      this.round = this.next_round;
+    }else {
+      this.next_round = this.round + 1;
+      this.round = -1;
+    }
   }
 }

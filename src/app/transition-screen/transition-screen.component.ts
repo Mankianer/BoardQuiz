@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GameKeeperService} from "../game-keeper.service";
 
 @Component({
   selector: 'app-transition-screen',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransitionScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(public gameKeeper: GameKeeperService) { }
 
   ngOnInit(): void {
   }

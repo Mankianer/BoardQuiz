@@ -1,13 +1,13 @@
 <div class="container">
-  <div class="round">Rund: {{round}}</div>
+  <div class="round">{{round}}. Runde - {{points}} P.</div>
   <div class="buttons">
     <div>
       <div>
-        <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'red'" (click)="selectRed()">+10</div></div>
-        <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'green'" (click)="selectGreen()">+10</div></div>
-        <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'blue'" (click)="selectBlue()">+10</div></div>
-        <div><div *ngIf="round == '' + this.game2.currentRound || winner == 'purple'" (click)="selectPurple()">+10</div></div>
-        <div><div *ngIf="round == '' + this.game2.currentRound && this.forceWinner == 'false'" (click)="selectNon()">❌</div></div>
+        <div><div *ngIf="round == this.game2.currentRound || winner == 'red'" (click)="selectRed()">+{{points}}</div></div>
+        <div><div *ngIf="round == this.game2.currentRound || winner == 'green'" (click)="selectGreen()">+{{points}}</div></div>
+        <div><div *ngIf="round == this.game2.currentRound || winner == 'blue'" (click)="selectBlue()">+{{points}}</div></div>
+        <div><div *ngIf="round == this.game2.currentRound || winner == 'purple'" (click)="selectPurple()">+{{points}}</div></div>
+        <div><div *ngIf="round == this.game2.currentRound && this.forceWinner == 'false'" (click)="selectNon()">❌</div></div>
       </div>
     </div>
   </div>

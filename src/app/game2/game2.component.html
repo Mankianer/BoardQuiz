@@ -4,7 +4,7 @@
   </div>
   <div class="row-container">
     <div class="row" *ngFor='let in of counter() ;let i = index'>
-      <app-row round="{{i + 1}}" force-winner="{{forceWinner}}"></app-row>
+      <app-row [round]="i + 1" [force-winner]="forceWinner"></app-row>
     </div>
   </div>
 </div>

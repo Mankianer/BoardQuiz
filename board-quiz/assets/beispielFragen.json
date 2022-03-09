@@ -1,0 +1,38 @@
+[
+  {
+    "kategorie": "Unnützes Wissen",
+    "fragen": [
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+    ]
+  },
+  {
+    "kategorie": "Film & Musik",
+    "fragen": [
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+    ]
+  },
+  {
+    "kategorie": "Sport & Freizeit",
+    "fragen": [
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+    ]
+  },
+  {
+    "kategorie": "Allgemeinwissen",
+    "fragen": [
+      ["5", "In welchem Land wohnen die meisten Menschen?"],
+      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
+      ["20", "Wie heißt Harry Potters Besen?"],
+      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+    ]
+  }
+]

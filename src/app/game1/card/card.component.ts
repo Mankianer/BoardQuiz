@@ -45,7 +45,7 @@ export class CardComponent implements OnInit {
 
   toggleFlip() {
     console.log(this.game1.current_Card.title)
-    if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "") {
+    if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "0") {
       this.flip = this.isFlipped() ? 'inactive' : 'active';
       this.game1.selectCard(this);
     }

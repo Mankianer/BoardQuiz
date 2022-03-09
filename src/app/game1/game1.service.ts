@@ -18,7 +18,7 @@ export interface Kategorie {
 export class Game1Service {
 
   public content: Kategorie[] = FragenBeispiel;
-  public current_Card: Card = {text: "Runde 1", title: ""};
+  public current_Card: Card = {text: "Runde 1", title: "0"};
   countdown: number = 0;
 
   constructor(public gameKeeper: GameKeeperService) {
@@ -32,8 +32,8 @@ export class Game1Service {
   }
 
   nextRound() {
-    this.countdown--;
-    this.selectCard({title: "", text: "Nächste Frage"})
+    if(this.current_Card.title != "0") {this.countdown--; }
+    this.selectCard({title: "0", text: "Nächste Frage"})
     if(this.countdown == 0) {
       this.gameKeeper.nextGame();
     }

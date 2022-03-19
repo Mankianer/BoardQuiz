@@ -12,7 +12,6 @@ import {Game2Component} from './game2/game2.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
-import {EndScreenComponent} from './end-screen/end-screen.component';
 import {TransitionScreenComponent} from './transition-screen/transition-screen.component';
 import {PlaygroundComponent} from './game1/playground/playground.component';
 import {ScoreboardComponent} from './game1/scoreboard/scoreboard.component';
@@ -21,7 +20,7 @@ import { RowComponent } from './game2/row/row.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule],
-  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, EndScreenComponent, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent],
+  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {

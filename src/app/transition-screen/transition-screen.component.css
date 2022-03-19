@@ -1,0 +1,47 @@
+.container {
+  height: 90%;
+  margin-top: 10%;
+}
+
+.score {
+  font-size: 75px;
+  height: 15%;
+}
+
+.first {
+  font-size: 100px;
+}
+
+.last {
+  font-size: 70px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.purple {
+  color: purple;
+}
+
+
+.font-border {
+  text-shadow: -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+}
+
+.next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

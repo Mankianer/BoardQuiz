@@ -1,2 +1,9 @@
-<p>transition-screen works!</p>
-<button mat-button (click)="gameKeeper.nextGame()" >Weiter</button>
+<div class="container">
+  <div *ngFor="let s of getScoreList(); let i = index; last as last" class="score" [ngClass]="{'first': i == 0, 'last': last}">
+    <p class="font-border"
+       [ngClass]="{'red': s.name=='red', 'blue': s.name=='blue', 'green': s.name=='green', 'purple': s.name=='purple'}">{{i + 1}}. {{s.text}}
+      - {{s.score}}P.</p>
+  </div>
+</div>
+
+<button mat-button (click)="gameKeeper.nextGame()" class="next">Weiter</button>

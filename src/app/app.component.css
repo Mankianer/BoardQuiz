@@ -9,4 +9,12 @@ p {
   background-image: url("https://mankianer.github.io/BoardQuiz/board-quiz/assets/bg.png");
   background-size: cover;
   background-color: #272727;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+.main-container::-webkit-scrollbar {
+  display: none;
+}
+

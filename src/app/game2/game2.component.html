@@ -1,6 +1,6 @@
 <div class="game2">
   <div class="row-container">
-    <div class="row" *ngFor='let in of counter() ;let i = index'>
+    <div class="row" *ngFor='let in of counter() ;let i = index; let l = last;' [ngClass]="{'row-first': i == 0, 'row-last': l}">
       <app-row [round]="i + 1" [force-winner]="forceWinner"></app-row>
     </div>
   </div>

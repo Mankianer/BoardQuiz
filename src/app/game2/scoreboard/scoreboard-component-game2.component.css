@@ -8,11 +8,13 @@
 }
 
 .outer-container {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
+  left: 20%;
+  position: absolute;
 }
 
 .scoreBox {

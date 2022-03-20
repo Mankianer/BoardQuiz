@@ -5,7 +5,7 @@
 .tp-box {
   position: relative;
   width: 100%;
-  height: 100px;
+  aspect-ratio: 2/1;
   transform-style: preserve-3d;
   display: flex;
 }
@@ -22,16 +22,27 @@
   user-select: none;
   word-wrap: break-word;
   align-items: center;
+
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 3px solid #1A1A1A;
 }
 .tp-box__front {
   background: green;
   transform: rotateY(0deg);
+  font-size: xxx-large;
 }
 .tp-box__back {
   background: #23262d;
   transform: rotateY(-180deg);
 }
 .tp-box__header {
-  background: darkred;
+  background: #A72515;
   transform: rotateY(0deg);
+  border-color: #562C2D;
+}
+
+.tp-box__side > p {
+  width: 100%;
 }

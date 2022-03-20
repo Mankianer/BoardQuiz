@@ -8,6 +8,7 @@
     </div>
     <div class="tp-box__side tp-box__back">
       <p>{{ text }}</p>
+      <div [ngClass]="{'bg-red': team == 'red', 'bg-blue': team == 'blue','bg-green': team == 'green','bg-purple': team == 'purple','bg-black': team == 'non'}"></div>
     </div>
   </div>
 </div>

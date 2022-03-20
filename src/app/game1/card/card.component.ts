@@ -42,6 +42,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {}
 
   flip: string = 'inactive';
+  public team: 'red' | 'blue' | 'green' | 'purple' | 'non' | ''  = ''
 
   toggleFlip() {
     if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "0") {
@@ -53,4 +54,5 @@ export class CardComponent implements OnInit {
   public isFlipped(): boolean{
     return this.flip == 'active';
   }
+
 }

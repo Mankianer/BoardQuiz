@@ -21,18 +21,22 @@ export class ScoreboardComponent implements OnInit {
 }
 
   selectRed(){
+    this.game1.current_Card.team = 'red';
     this.gameKeeper.score_red += this.getScore();
   }
 
   selectGreen(){
+    this.game1.current_Card.team = 'green';
     this.gameKeeper.score_green += this.getScore();
   }
 
   selectBlue(){
+    this.game1.current_Card.team = 'blue';
     this.gameKeeper.score_blue += this.getScore();
   }
 
   selectPurple(){
+    this.game1.current_Card.team = 'purple';
     this.gameKeeper.score_purple += this.getScore();
   }
 

@@ -1,9 +1,9 @@
 <div class="container">
-  <div *ngFor="let s of getScoreList(); let i = index; last as last;" class="score" [ngClass]="{'first': i == 0, 'last': last}">
+  <div *ngFor="let s of getScoreList(); let i = index; last as last;" class="score" [ngClass]="{'first': s.rank == 1, 'last': last && s.rank != 1}">
     <p class="font-border"
        [ngClass]="{'c-red': s.name=='red', 'c-blue': s.name=='blue', 'c-green': s.name=='green', 'c-purple': s.name=='purple'}">{{s.rank}}. {{s.text}}
-      - {{s.score}}P.</p>
+      - {{s.score}}P.<ng-container *ngIf="gameKeeper.round == 5 && s.rank == 1">🏆</ng-container></p>
   </div>
 </div>
+<button mat-button (click)="gameKeeper.nextGame()" class="next" *ngIf="gameKeeper.round != 5">Weiter</button>
 
-<button mat-button (click)="gameKeeper.nextGame()" class="next">Weiter</button>

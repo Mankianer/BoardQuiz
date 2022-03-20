@@ -25,6 +25,8 @@
   align-items: center; /* align vertical */
   left: 15%;
   top: 10%;
+  border: 3px solid #272727;
+  border-radius: 10px;
 }
 
 .scoreBox > p {

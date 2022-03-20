@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GameKeeperService {
 
-  round: number = 2;
+  round: number = 0;
   score_red: number = 0;
   score_green: number = 0;
   score_blue: number = 0;

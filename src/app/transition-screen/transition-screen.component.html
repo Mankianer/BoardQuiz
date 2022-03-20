@@ -1,7 +1,7 @@
 <div class="container">
-  <div *ngFor="let s of getScoreList(); let i = index; last as last" class="score" [ngClass]="{'first': i == 0, 'last': last}">
+  <div *ngFor="let s of getScoreList(); let i = index; last as last;" class="score" [ngClass]="{'first': i == 0, 'last': last}">
     <p class="font-border"
-       [ngClass]="{'c-red': s.name=='red', 'c-blue': s.name=='blue', 'c-green': s.name=='green', 'c-purple': s.name=='purple'}">{{i + 1}}. {{s.text}}
+       [ngClass]="{'c-red': s.name=='red', 'c-blue': s.name=='blue', 'c-green': s.name=='green', 'c-purple': s.name=='purple'}">{{s.rank}}. {{s.text}}
       - {{s.score}}P.</p>
   </div>
 </div>

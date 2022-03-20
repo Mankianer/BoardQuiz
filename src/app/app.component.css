@@ -6,6 +6,7 @@ p {
   margin: auto;
   aspect-ratio: 4 / 3;
   height: 100%;
-  background-image: url("/assets/bg.jpg");
+  background-image: url("/assets/bg.png");
   background-size: cover;
+  background-color: #272727;
 }

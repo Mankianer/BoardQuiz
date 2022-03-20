@@ -1,4 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(#F2552C, #A72515, #7F1F20, #562C2D);
+  background-color: #7F1F20;
+}
+
+.bg-red {
+  background-color: red
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+
+.bg-purple {
+  background-color: purple;
+}
+
+.c-red {
+  color: red;
+}
+
+.c-blue {
+  color: blue;
+}
+
+.c-green {
+  color: green;
+}
+
+.c-purple {
+  color: purple;
+}

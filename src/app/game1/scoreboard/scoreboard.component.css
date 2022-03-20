@@ -15,24 +15,20 @@
 .red {
   position: absolute;
   top: 5%;
-  background-color: red
 }
 
 .green {
   position: absolute;
   top: 30%;
-  background-color: green;
 }
 
 .blue {
   position: absolute;
   top: 55%;
-  background-color: blue;
 }
 
 
 .purple {
   position: absolute;
   top: 80%;
-  background-color: purple;
 }

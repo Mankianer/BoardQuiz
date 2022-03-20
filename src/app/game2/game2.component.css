@@ -1,9 +1,10 @@
 .scoreboard {
   height: 15%;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 20%;
   right: 0;
+  background-color: #23262d90;
 }
 
 .game2 {
@@ -17,7 +18,7 @@
   top: 15%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 
 .row {

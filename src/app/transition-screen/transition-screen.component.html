@@ -4,6 +4,6 @@
        [ngClass]="{'c-red': s.name=='red', 'c-blue': s.name=='blue', 'c-green': s.name=='green', 'c-purple': s.name=='purple'}">{{s.rank}}. {{s.text}}
       - {{s.score}}P.<ng-container *ngIf="gameKeeper.round == 5 && s.rank == 1">🏆</ng-container></p>
   </div>
+  <div (click)="gameKeeper.nextGame()" *ngIf="gameKeeper.round != 5" class="next"><p>Weiter</p></div>
 </div>
-<button mat-button (click)="gameKeeper.nextGame()" class="next" *ngIf="gameKeeper.round != 5">Weiter</button>
 

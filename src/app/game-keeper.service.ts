@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -13,12 +13,15 @@ export class GameKeeperService {
 
   next_round = 1;
 
-  constructor() { }
+  constructor() {
+  }
 
   public nextGame() {
-    if( this.round == -1){
+    if (this.round == 4) {
+      this.round = 5;
+    } else if (this.round == -1) {
       this.round = this.next_round;
-    }else {
+    } else {
       this.next_round = this.round + 1;
       this.round = -1;
     }

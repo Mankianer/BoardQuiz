@@ -19,8 +19,6 @@
 }
 
 
-
-
 .font-border {
   text-shadow: -2px 2px 0 #000,
   2px 2px 0 #000,
@@ -29,7 +27,23 @@
 }
 
 .next {
-  position: static;
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  top: 80%;
+  bottom: 10%;
+  left: 40%;
+  right: 40%;
+  background-color: #FAEBD6;
+
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  border-radius: 30px;
+  border: 3px solid #272729;
+  padding: 5px;
+}
+
+.next > p {
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
 }

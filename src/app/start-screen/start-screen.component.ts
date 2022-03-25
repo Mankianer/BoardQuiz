@@ -8,6 +8,8 @@ import {GameKeeperService} from "../game-keeper.service";
 })
 export class StartScreenComponent implements OnInit {
 
+  toggle = false;
+
   constructor(public gameKeeper: GameKeeperService) {
   }
 
@@ -16,6 +18,10 @@ export class StartScreenComponent implements OnInit {
 
   public startRound(round: number) {
     this.gameKeeper.round = round;
+  }
+
+  public hit() {
+    this.toggle = !this.toggle;
   }
 
 }

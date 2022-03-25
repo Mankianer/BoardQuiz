@@ -1,4 +1,12 @@
-<mat-card>hallo
+<div class="container" xmlns="http://www.w3.org/1999/html" *ngIf="!toggle">
+  <div class="title" (click)="hit()">
+    <p class="sub">deep vibes &nbsp;-</p>
+    <p class="main">&nbsp; QUIZ GAMES</p>
+  </div>
+
+  <div class="start" (click)="startRound(1)"><p>Start</p></div>
+</div>
+<mat-card *ngIf="toggle">
   <mat-form-field>
     <mat-label>Rot</mat-label>
     <input matInput type="number" [(ngModel)]="gameKeeper.score_red">
@@ -23,3 +31,4 @@
     <button mat-button (click)="startRound(5)">EndScreen</button>
   </mat-card-actions>
 </mat-card>
+

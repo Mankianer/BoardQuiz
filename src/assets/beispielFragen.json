@@ -11,28 +11,29 @@
   {
     "kategorie": "Film & Musik",
     "fragen": [
-      ["5", "In welchem Land wohnen die meisten Menschen?"],
-      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
-      ["20", "Wie heißt Harry Potters Besen?"],
-      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+      ["5", " Welche von den Liedern sind Songs von Justin Bieber?"],
+      ["10", "Wie viele Film-Teile hat der Film 'fast & the furios'?"],
+      ["20", "Wer ist der Hauptdarsteller aus 'The Lover Doctor'?"],
+      ["50", "Welches Youtube Video hat die meisten Aufrufe?"]
     ]
   },
   {
     "kategorie": "Sport & Freizeit",
     "fragen": [
-      ["5", "In welchem Land wohnen die meisten Menschen?"],
-      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
-      ["20", "Wie heißt Harry Potters Besen?"],
-      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+      ["5", "Welche Nummer hat C. Ronaldo?"],
+      ["10", "Was ist der populärste Sport in Amerika?"],
+      ["20", "Aus welchem Land kommt der Kampfsport Judo?"],
+      ["50", "Wie alt war Kylian Mbappé als er die WM gewann?"]
+
     ]
   },
   {
     "kategorie": "Allgemeinwissen",
     "fragen": [
-      ["5", "In welchem Land wohnen die meisten Menschen?"],
-      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?"],
-      ["20", "Wie heißt Harry Potters Besen?"],
-      ["50", "Welche 2 Körperteile wachsen dein Leben lang?"]
+      ["5", "Wie viele Bundesländer hat Deutschland?"],
+      ["10", "Was ist die Hauptstadt von Australien?"],
+      ["20", "Was ist die Durchschnittliche Penisgröße in Deutschland?"],
+      ["50", "Wie viele Planeten gehören zu unserem Sonnensystem?"]
     ]
   }
 ]

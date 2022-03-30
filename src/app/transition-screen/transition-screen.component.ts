@@ -48,7 +48,7 @@ export class TransitionScreenComponent implements OnInit {
   }
 
   getPurple(): Score {
-    return new Score("purple", this.gameKeeper.score_purple, "Team Lila");
+    return new Score("purple", this.gameKeeper.score_purple, "Team Gelb");
   }
 
 }

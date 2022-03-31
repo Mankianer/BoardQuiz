@@ -3,6 +3,7 @@
     <div class="row" *ngFor='let in of counter() ;let i = index; let l = last;' [ngClass]="{'row-first': i == 0, 'row-last': l}">
       <app-row [round]="i + 1" [force-winner]="forceWinner"></app-row>
     </div>
+  <app-timer></app-timer>
   </div>
   <div class="scoreboard">
     <app-scoreboard-horizontal></app-scoreboard-horizontal>

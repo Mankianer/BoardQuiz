@@ -1,0 +1,48 @@
+.display {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  right: 35%;
+  height: 25%;
+  background-color: #92A500;
+}
+
+.display>p {
+  font-size: 900%;
+  line-height: 100%;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.start-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15%;
+  width: 75%;
+  background-color: lightgreen;
+  font-size: 200%;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.reset-btn {
+  position: absolute;
+  bottom: 0;
+  left: 75%;
+  height: 15%;
+  width: 25%;
+  background-color: lightcoral;
+  font-size: 200%;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+
+}

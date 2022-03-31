@@ -17,10 +17,11 @@ import {PlaygroundComponent} from './game1/playground/playground.component';
 import {ScoreboardComponent} from './game1/scoreboard/scoreboard.component';
 import {ScoreboardComponentGame2} from "./game2/scoreboard/scoreboard-component-game2.component";
 import { RowComponent } from './game2/row/row.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule],
-  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent],
+  declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent, TimerComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {

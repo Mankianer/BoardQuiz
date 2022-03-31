@@ -1,0 +1,5 @@
+<div class="display">
+  <div class="start-btn" (click)="pauseResumeTimer()"><p *ngIf="isStopped">Start</p><p *ngIf="!isStopped">Pause</p></div>
+  <div class="reset-btn" (click)="resetTimer()">Reset</div>
+  <p>{{timeLeft}}</p>
+</div>

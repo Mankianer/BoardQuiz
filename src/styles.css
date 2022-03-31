@@ -7,8 +7,8 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image: linear-gradient(#F2552C, #A72515, #7F1F20, #562C2D);
-  background-color: #7F1F20;
+  background-color: black;
+
 }
 
 .bg-red {

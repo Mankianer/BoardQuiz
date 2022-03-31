@@ -11,6 +11,7 @@ export class Game2Component implements OnInit {
   @Input("rounds") rounds = "1";
   @Input("force-winner") forceWinner = "false";
   @Input("points") pointArray: number[] = [10];
+  @Input("hasTimer") hasTimer: boolean = false;
 
   constructor(public game2: Game2Service) {
   }

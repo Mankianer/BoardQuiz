@@ -1,6 +1,11 @@
 import {Component, Injectable, Input, OnInit} from '@angular/core';
 import {Game2Service} from "../game2.service";
 import {GameKeeperService} from "../../game-keeper.service";
+import {UndoService} from "../../undo.service";
+
+export class RowState {
+  winner = "";
+}
 
 @Component({
   selector: 'app-row',
@@ -13,9 +18,28 @@ export class RowComponent implements OnInit {
   @Input("force-winner") forceWinner = "false";
   @Input("points") points: number = 0;
 
-  winner = "";
+  get winner(): string {
+    return this.state.winner;
+  }
 
-  constructor(public game2: Game2Service, public gameKeeper: GameKeeperService) {
+  set winner(value: string) {
+    // if(this.state.winner == value) return;
+    // this.undoService.createSavepoint("Row Winner");
+    this.state.winner = value;
+  }
+
+  state: RowState = new RowState();
+
+  constructor(public game2: Game2Service, public gameKeeper: GameKeeperService, private undoService: UndoService) {
+    this.undoService.savepointCreateEventEmitter.subscribe((count) => {
+      this.undoService.saveState(this.state, "rowstate" + this.round, count);
+    });
+
+    this.undoService.undoEventEmitter.subscribe((count) => {
+      let state = this.undoService.getState("rowstate" + this.round, count);
+      if(state == null) return;
+      this.state = state;
+    });
   }
 
   ngOnInit(): void {

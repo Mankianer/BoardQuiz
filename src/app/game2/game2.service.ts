@@ -1,16 +1,39 @@
 import {Injectable} from '@angular/core';
 import {GameKeeperService} from "../game-keeper.service";
+import {UndoService} from "../undo.service";
+
+export class Game2State {
+  currentRound = 1;
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class Game2Service {
 
-  currentRound = 1;
+  state: Game2State = new Game2State();
+  get currentRound(): number {
+    return this.state.currentRound;
+  }
+  set currentRound(value: number) {
+    // if(this.state.currentRound == value) return;
+    // this.undoService.createSavepoint("game2 currentRound");
+    this.state.currentRound = value;
+  }
+
   maxRounds = 0;
   pointArray: number[] = [10];
 
-  constructor(public gameKeeper: GameKeeperService) {
+  constructor(public gameKeeper: GameKeeperService, private undoService: UndoService) {
+    this.undoService.savepointCreateEventEmitter.subscribe((count) => {
+      this.undoService.saveState(this.state, "game2state", count);
+    });
+
+    this.undoService.undoEventEmitter.subscribe((count) => {
+      let state = this.undoService.getState("game2state", count);
+      if(state == null) return;
+      this.state = state;
+    });
   }
 
   public reset(){

@@ -49,7 +49,7 @@ export class UndoService {
     if(this.registeredIds.indexOf(id) == -1) {
       this.registeredIds.push(id);
     }
-    localStorage.setItem("undo_" + id + "_" + count, JSON.stringify(state));
+    localStorage.setItem("undo_" + id + "_" + count, JSON.stringify(state, this.getCircularReplacer()));
   }
 
   public getState(id: string, count: number) {
@@ -59,6 +59,18 @@ export class UndoService {
     return JSON.parse(json);
   }
 
+  private getCircularReplacer() {
+    const seen = new WeakSet();
+    return (key: any, value: any) => {
+      if (typeof value === "object" && value !== null) {
+        if (seen.has(value)) {
+          return;
+        }
+        seen.add(value);
+      }
+      return value;
+    };
+  }
 
 
 }

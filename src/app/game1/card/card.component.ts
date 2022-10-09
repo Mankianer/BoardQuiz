@@ -45,7 +45,7 @@ export class CardComponent implements OnInit {
   @Input() text: string = 'Hier steht dann deine Frage?';
   @Input() isHeader: boolean = false;
 
-  private state: CardContent = new CardContent();
+  private state: CardContent = new CardContent(); //TODO: card content in gameservice
   get flip() {
     return this.state.flip;
   }

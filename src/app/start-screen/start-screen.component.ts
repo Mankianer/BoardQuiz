@@ -8,7 +8,7 @@ import {GameKeeperService} from "../game-keeper.service";
 })
 export class StartScreenComponent implements OnInit {
 
-  toggle = false;
+  toggle = true;
 
   constructor(public gameKeeper: GameKeeperService) {
   }

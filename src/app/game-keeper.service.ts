@@ -5,13 +5,13 @@ import {Injectable} from '@angular/core';
 })
 export class GameKeeperService {
 
-  round: number = 0;
-  score_red: number = 0;
-  score_green: number = 0;
-  score_blue: number = 0;
-  score_purple: number = 0;
+  private _round: number = 0;
+  private _score_red: number = 0;
+  private _score_green: number = 0;
+  private _score_blue: number = 0;
+  private _score_purple: number = 0;
 
-  next_round = 1;
+  private _next_round = 1;
 
   constructor() {
   }
@@ -26,4 +26,43 @@ export class GameKeeperService {
       this.round = -1;
     }
   }
+
+  get round(): number {
+    return this._round;
+  }
+  set round(value: number) {
+    this._round = value;
+  }
+  get score_red(): number {
+    return this._score_red;
+  }
+  set score_red(value: number) {
+    this._score_red = value;
+  }
+  get score_green(): number {
+    return this._score_green;
+  }
+  set score_green(value: number) {
+    this._score_green = value;
+  }
+  get score_blue(): number {
+    return this._score_blue;
+  }
+  set score_blue(value: number) {
+    this._score_blue = value;
+  }
+  get score_purple(): number {
+    return this._score_purple;
+  }
+  set score_purple(value: number) {
+    this._score_purple = value;
+  }
+  get next_round(): number {
+    return this._next_round;
+  }
+  set next_round(value: number) {
+    this._next_round = value;
+  }
+
+
 }

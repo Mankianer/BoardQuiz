@@ -8,6 +8,13 @@ import {
   animate,
 } from '@angular/animations';
 import {Game1Service} from "../game1.service";
+import {UndoService} from "../../undo.service";
+
+
+export class CardContent {
+  flip: string = 'inactive';
+  public team: 'red' | 'blue' | 'green' | 'purple' | 'non' | ''  = ''
+}
 
 @Component({
   selector: 'app-card',
@@ -34,15 +41,42 @@ import {Game1Service} from "../game1.service";
 })
 export class CardComponent implements OnInit {
   @Input() title: string = 'Title';
+  @Input() id: number = -1;
   @Input() text: string = 'Hier steht dann deine Frage?';
   @Input() isHeader: boolean = false;
 
-  constructor(public game1: Game1Service) {}
+  private state: CardContent = new CardContent();
+  get flip() {
+    return this.state.flip;
+  }
+  get team() {
+    return this.state.team;
+  }
+  set flip(value: string) {
+    this.state.flip = value;
+  }
+  set team(value: 'red' | 'blue' | 'green' | 'purple' | 'non' | '') {
+    this.state.team = value;
+  }
+
+
+  constructor(public game1: Game1Service, private undoService: UndoService) {
+
+    this.undoService.savepointCreateEventEmitter.subscribe((count) => {
+      if(this.id == -1) return;
+      this.undoService.saveState(this.state, "cardstate" + this.id, count);
+    });
+
+    this.undoService.undoEventEmitter.subscribe((count) => {
+      if(this.id == -1) return;
+      let state = this.undoService.getState("cardstate" + this.id, count);
+      if(state == null) return;
+      this.state = state;
+    });
+  }
 
   ngOnInit() {}
 
-  flip: string = 'inactive';
-  public team: 'red' | 'blue' | 'green' | 'purple' | 'non' | ''  = ''
 
   toggleFlip() {
     if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "0") {

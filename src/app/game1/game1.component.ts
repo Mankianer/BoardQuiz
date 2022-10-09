@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Game1Service} from "./game1.service";
 import {ShortcutInput} from "ng-keyboard-shortcuts";
+import {UndoService} from "../undo.service";
 
 
 @Component({
@@ -12,13 +13,10 @@ export class Game1Component implements OnInit, AfterViewInit {
 
   shortcuts: ShortcutInput[] = [];
 
-  constructor(public game1: Game1Service) { }
+  constructor(public game1: Game1Service, private undoService: UndoService) { }
 
   ngOnInit(): void {
-  }
-
-  private undo() {
-    console.log("undo!");
+    this.undoService.createSavepoint();
   }
 
   ngAfterViewInit(): void {
@@ -26,7 +24,7 @@ export class Game1Component implements OnInit, AfterViewInit {
       key: ["ctrl + z"],
       label: "Undo",
       description: "Strg + Z",
-      command: this.undo,
+      command: this.undoService.undo.bind(this.undoService),
       preventDefault: true
     });
   }

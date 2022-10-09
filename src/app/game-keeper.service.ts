@@ -1,20 +1,36 @@
 import {Injectable} from '@angular/core';
 import {UndoService} from "./undo.service";
 
+export class GameState {
+  public _round: number = 0;
+  public _score_red: number = 0;
+  public _score_green: number = 0;
+  public _score_blue: number = 0;
+  public _score_purple: number = 0;
+
+  public _next_round = 1;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class GameKeeperService {
 
-  private _round: number = 0;
-  private _score_red: number = 0;
-  private _score_green: number = 0;
-  private _score_blue: number = 0;
-  private _score_purple: number = 0;
+  private gamestate = new GameState();
 
-  private _next_round = 1;
+
 
   constructor(private undoService: UndoService) {
+    this.undoService.savepointCreateEventEmitter.subscribe((count) => {
+      this.undoService.saveState(this.gamestate, "gamestate", count);
+    });
+
+    this.undoService.undoEventEmitter.subscribe((count) => {
+      let state = this.undoService.getState("gamestate", count);
+      if(state == null) return;
+      this.gamestate = state;
+    });
+    this.undoService.createSavepoint();
   }
 
   public nextGame() {
@@ -29,44 +45,46 @@ export class GameKeeperService {
   }
 
   get round(): number {
-    return this._round;
+    return this.gamestate._round;
   }
   set round(value: number) {
-    this._round = value;
+    this.gamestate._round = value;
+    this.undoService.createSavepoint();
   }
   get score_red(): number {
-    return this._score_red;
+    return this.gamestate._score_red;
   }
   set score_red(value: number) {
-    this._score_red = value;
+    this.gamestate._score_red = value;
     this.undoService.createSavepoint();
   }
   get score_green(): number {
-    return this._score_green;
+    return this.gamestate._score_green;
   }
   set score_green(value: number) {
-    this._score_green = value;
+    this.gamestate._score_green = value;
     this.undoService.createSavepoint();
   }
   get score_blue(): number {
-    return this._score_blue;
+    return this.gamestate._score_blue;
   }
   set score_blue(value: number) {
-    this._score_blue = value;
+    this.gamestate._score_blue = value;
     this.undoService.createSavepoint();
   }
   get score_purple(): number {
-    return this._score_purple;
+    return this.gamestate._score_purple;
   }
   set score_purple(value: number) {
-    this._score_purple = value;
+    this.gamestate._score_purple = value;
     this.undoService.createSavepoint();
   }
   get next_round(): number {
-    return this._next_round;
+    return this.gamestate._next_round;
   }
   set next_round(value: number) {
-    this._next_round = value;
+    this.gamestate._next_round = value;
+    this.undoService.createSavepoint();
   }
 
 

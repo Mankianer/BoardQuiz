@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <div *ngFor="let c of game1.content" style="display: table-cell">
+  <div *ngFor="let c of game1.content; let i = index" style="display: table-cell">
     <app-card
       class="grid-item"
       [title]="c.kategorie"
@@ -7,9 +7,10 @@
     ></app-card>
     <app-card
       class="grid-item"
-      *ngFor="let f of c.fragen"
+      *ngFor="let f of c.fragen; let j = index"
       [title]="f[0]"
       [text]="f[1]"
+      [id]="i * 10 + j"
     ></app-card>
   </div>
 </div>

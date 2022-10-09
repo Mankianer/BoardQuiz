@@ -5,12 +5,12 @@ import {EventEmitter, Injectable} from '@angular/core';
 })
 export class UndoService {
 
-  private maxUndos = 10;
+  private maxUndos = 5;
 
   private registeredIds: string[] = [];
 
-  public savepointCreateEventEmitter: EventEmitter<number> = new EventEmitter<number>();
-  public undoEventEmitter: EventEmitter<number> = new EventEmitter<number>();
+  public savepointCreateEventEmitter: EventEmitter<number> = new EventEmitter();
+  public undoEventEmitter: EventEmitter<number> = new EventEmitter();
 
   private _undoCount = 0;
   private _undoCountOffset = 0;
@@ -29,6 +29,7 @@ export class UndoService {
 
   public createSavepoint() {
     this._undoCount++;
+    console.log("savepoint created! - " + this.undoLeft + " left - id:" + this._undoCount);
     this.savepointCreateEventEmitter.emit(this._undoCount);
     if(this.undoLeft == this.maxUndos) {
       this._undoCountOffset++;
@@ -39,6 +40,7 @@ export class UndoService {
   }
 
   public saveState(state: any, id: string, count: number) {
+    console.log("saveState: " + "undo_" + id + "_" + count + " - " + JSON.stringify(state));
     if(this.registeredIds.indexOf(id) == -1) {
       this.registeredIds.push(id);
     }
@@ -47,6 +49,7 @@ export class UndoService {
 
   public getState(id: string, count: number) {
     let json = localStorage.getItem("undo_" + id + "_" + count);
+    console.log("getState: " + "undo_" + id + "_" + count + " - " + json);
     if(json == null) return null;
     return JSON.parse(json);
   }

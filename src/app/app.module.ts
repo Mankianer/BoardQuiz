@@ -16,12 +16,12 @@ import {TransitionScreenComponent} from './transition-screen/transition-screen.c
 import {PlaygroundComponent} from './game1/playground/playground.component';
 import {ScoreboardComponent} from './game1/scoreboard/scoreboard.component';
 import {ScoreboardComponentGame2} from "./game2/scoreboard/scoreboard-component-game2.component";
-import { RowComponent } from './game2/row/row.component';
-import { TimerComponent } from './timer/timer.component';
+import {RowComponent} from './game2/row/row.component';
+import {TimerComponent} from './timer/timer.component';
 import {KeyboardShortcutsModule} from "ng-keyboard-shortcuts";
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, KeyboardShortcutsModule],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, KeyboardShortcutsModule.forRoot()],
   declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent, TimerComponent],
   bootstrap: [AppComponent],
 })

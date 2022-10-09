@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {UndoService} from "./undo.service";
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class GameKeeperService {
 
   private _next_round = 1;
 
-  constructor() {
+  constructor(private undoService: UndoService) {
   }
 
   public nextGame() {
@@ -38,24 +39,28 @@ export class GameKeeperService {
   }
   set score_red(value: number) {
     this._score_red = value;
+    this.undoService.createSavepoint();
   }
   get score_green(): number {
     return this._score_green;
   }
   set score_green(value: number) {
     this._score_green = value;
+    this.undoService.createSavepoint();
   }
   get score_blue(): number {
     return this._score_blue;
   }
   set score_blue(value: number) {
     this._score_blue = value;
+    this.undoService.createSavepoint();
   }
   get score_purple(): number {
     return this._score_purple;
   }
   set score_purple(value: number) {
     this._score_purple = value;
+    this.undoService.createSavepoint();
   }
   get next_round(): number {
     return this._next_round;

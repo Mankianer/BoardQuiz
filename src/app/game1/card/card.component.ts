@@ -53,7 +53,9 @@ export class CardComponent implements OnInit {
     return this.state.team;
   }
   set flip(value: string) {
+    // if(this.state.flip == value) return;
     this.state.flip = value;
+    // this.undoService.createSavepoint("card flip")
   }
   set team(value: 'red' | 'blue' | 'green' | 'purple' | 'non' | '') {
     this.state.team = value;

@@ -16,7 +16,10 @@ export class Game1Component implements OnInit, AfterViewInit {
   constructor(public game1: Game1Service, private undoService: UndoService) { }
 
   ngOnInit(): void {
-    this.undoService.createSavepoint();
+  }
+
+  undo() {
+    this.undoService.undo("game1");
   }
 
   ngAfterViewInit(): void {
@@ -24,9 +27,10 @@ export class Game1Component implements OnInit, AfterViewInit {
       key: ["ctrl + z"],
       label: "Undo",
       description: "Strg + Z",
-      command: this.undoService.undo.bind(this.undoService),
+      command: this.undo.bind(this),
       preventDefault: true
     });
+    this.undoService.createSavepoint("game1");
   }
 
 }

@@ -16,6 +16,7 @@ export interface Kategorie {
 
 export class Game1State {
   public countdown: number = 0;
+  public current_Card: Card = {text: "Runde 1", title: "0", team: ""};
 }
 
 @Injectable({
@@ -24,7 +25,9 @@ export class Game1State {
 export class Game1Service {
 
   public content: Kategorie[] = FragenBeispiel;
-  public current_Card: Card = {text: "Runde 1", title: "0", team: ""};
+  get current_Card(): Card {
+    return this.game1State.current_Card;
+  }
 
   public game1State = new Game1State();
 
@@ -44,7 +47,7 @@ export class Game1Service {
   }
 
   selectCard(card: Card): void {
-    this.current_Card = card;
+    this.game1State.current_Card = card;
   }
 
   nextRound() {

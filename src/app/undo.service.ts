@@ -5,7 +5,7 @@ import {EventEmitter, Injectable} from '@angular/core';
 })
 export class UndoService {
 
-  private maxUndos = 5;
+  private maxUndos = 20;
 
   private registeredIds: string[] = [];
 
@@ -18,18 +18,23 @@ export class UndoService {
     return this._undoCount - this._undoCountOffset;
   }
 
-  constructor() { }
+  constructor() {
+    localStorage.clear();
+  }
 
-  public undo() {
-    console.log("undo init! - " + this.undoLeft + " left - id:" + this._undoCount);
+  public undo(name: string) {
+    console.log("undo init! - " + this.undoLeft + " left - id:" + this._undoCount + " - from " + name);
     if(this.undoLeft == 0) return;
     this.undoEventEmitter.emit(this._undoCount);
+    for(let id of this.registeredIds) {
+      localStorage.removeItem("undo_" + id + "_" + this._undoCount);
+    }
     this._undoCount--;
   }
 
-  public createSavepoint() {
+  public createSavepoint(name: string) {
     this._undoCount++;
-    console.log("savepoint created! - " + this.undoLeft + " left - id:" + this._undoCount);
+    console.log("savepoint created! - " + this.undoLeft + " left - id:" + this._undoCount + " - from " + name);
     this.savepointCreateEventEmitter.emit(this._undoCount);
     if(this.undoLeft == this.maxUndos) {
       this._undoCountOffset++;
@@ -40,7 +45,7 @@ export class UndoService {
   }
 
   public saveState(state: any, id: string, count: number) {
-    console.log("saveState: " + "undo_" + id + "_" + count + " - " + JSON.stringify(state));
+    // console.log("saveState: " + "undo_" + id + "_" + count + " - " + JSON.stringify(state));
     if(this.registeredIds.indexOf(id) == -1) {
       this.registeredIds.push(id);
     }
@@ -49,7 +54,7 @@ export class UndoService {
 
   public getState(id: string, count: number) {
     let json = localStorage.getItem("undo_" + id + "_" + count);
-    console.log("getState: " + "undo_" + id + "_" + count + " - " + json);
+    // console.log("getState: " + "undo_" + id + "_" + count + " - " + json);
     if(json == null) return null;
     return JSON.parse(json);
   }

@@ -50,49 +50,49 @@ export class GameKeeperService {
     return this.gamestate._round;
   }
   set round(value: number) {
-    if(value == this.gamestate._round) return;
+    // if(value == this.gamestate._round) return;
+    // this.undoService.createSavepoint("round");
     this.gamestate._round = value;
-    this.undoService.createSavepoint("round");
   }
   get score_red(): number {
     return this.gamestate._score_red;
   }
   set score_red(value: number) {
-    if(value == this.gamestate._score_red) return;
+    // if(value == this.gamestate._score_red) return;
+    // this.undoService.createSavepoint("score_red");
     this.gamestate._score_red = value;
-    this.undoService.createSavepoint("score_red");
   }
   get score_green(): number {
     return this.gamestate._score_green;
   }
   set score_green(value: number) {
-    if(value == this.gamestate._score_green) return;
+    // if(value == this.gamestate._score_green) return;
+    // this.undoService.createSavepoint("score_green");
     this.gamestate._score_green = value;
-    this.undoService.createSavepoint("score_green");
   }
   get score_blue(): number {
     return this.gamestate._score_blue;
   }
   set score_blue(value: number) {
-    if(value == this.gamestate._score_blue) return;
+    // if(value == this.gamestate._score_blue) return;
+    // this.undoService.createSavepoint("score_blue");
     this.gamestate._score_blue = value;
-    this.undoService.createSavepoint("score_blue");
   }
   get score_purple(): number {
     return this.gamestate._score_purple;
   }
   set score_purple(value: number) {
-    if(value == this.gamestate._score_purple) return;
+    // if(value == this.gamestate._score_purple) return;
+    // this.undoService.createSavepoint("score_purple");
     this.gamestate._score_purple = value;
-    this.undoService.createSavepoint("score_purple");
   }
   get next_round(): number {
     return this.gamestate._next_round;
   }
   set next_round(value: number) {
-    if(value == this.gamestate._next_round) return;
+    // if(value == this.gamestate._next_round) return;
+    // this.undoService.createSavepoint("next_round");
     this.gamestate._next_round = value;
-    this.undoService.createSavepoint("next_round");
   }
 
 

@@ -46,41 +46,38 @@ export class RowComponent implements OnInit {
     this.points = this.game2.getPointsForRound(this.round);
   }
 
-  selectRed() {
+
+  private selectColor(team: string = "") {
+    this.undoService.createSavepoint("Row Winner");
     if (this.winner == "") {
-      this.winner = 'red';
-      this.gameKeeper.score_red += this.points;
+      this.winner = team;
       this.game2.nextTurn();
     }
   }
 
+  selectRed() {
+    this.selectColor('red');
+    this.gameKeeper.score_red += this.points;
+  }
+
+
   selectGreen() {
-    if (this.winner == "") {
-      this.winner = 'green';
-      this.gameKeeper.score_green += this.points;
-      this.game2.nextTurn();
-    }
+    this.selectColor('green');
+    this.gameKeeper.score_green += this.points;
   }
 
   selectBlue() {
-    if (this.winner == "") {
-      this.winner = 'blue';
-      this.gameKeeper.score_blue += this.points;
-      this.game2.nextTurn();
-    }
+    this.selectColor('blue');
+    this.gameKeeper.score_blue += this.points;
   }
 
   selectPurple() {
-    if (this.winner == "") {
-      this.winner = 'purple';
-      this.gameKeeper.score_purple += this.points;
-      this.game2.nextTurn();
-    }
+    this.selectColor('purple');
+    this.gameKeeper.score_purple += this.points;
   }
 
   selectNon() {
-    this.winner = 'non';
-    this.game2.nextTurn();
+    this.selectColor('non');
   }
 
 }

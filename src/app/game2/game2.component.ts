@@ -37,6 +37,7 @@ export class Game2Component implements OnInit, AfterViewInit {
       command: this.undo.bind(this),
       preventDefault: true
     });
+    this.undoService.reset();
     this.undoService.createSavepoint("Game 2 Init");
   }
 

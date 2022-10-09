@@ -38,6 +38,8 @@ export class GameKeeperService {
       this.round = 5;
     } else if (this.round == -1) {
       this.round = this.next_round;
+      this.undoService.reset();
+      this.undoService.createSavepoint("gamekeeper after transition");
     } else {
       this.next_round = this.round + 1;
       this.round = -1;

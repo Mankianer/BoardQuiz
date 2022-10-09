@@ -36,7 +36,6 @@ export class Game1Service {
       this.game1State.countdown += this.content[i].fragen.length;
     }
     this.undoService.savepointCreateEventEmitter.subscribe((count) => {
-      console.log(this.game1State)
       this.undoService.saveState(this.game1State, "game1state", count);
     });
 

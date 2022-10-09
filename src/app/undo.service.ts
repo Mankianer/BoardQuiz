@@ -19,7 +19,15 @@ export class UndoService {
   }
 
   constructor() {
+    this.reset();
+  }
+
+  public reset() {
+    console.log("reset undo");
     localStorage.clear();
+    this._undoCount = 0;
+    this._undoCountOffset = 0;
+    this.registeredIds = [];
   }
 
   public undo(name: string) {

@@ -18,9 +18,10 @@ import {ScoreboardComponent} from './game1/scoreboard/scoreboard.component';
 import {ScoreboardComponentGame2} from "./game2/scoreboard/scoreboard-component-game2.component";
 import { RowComponent } from './game2/row/row.component';
 import { TimerComponent } from './timer/timer.component';
+import {KeyboardShortcutsModule} from "ng-keyboard-shortcuts";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule],
+    imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, KeyboardShortcutsModule],
   declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent, TimerComponent],
   bootstrap: [AppComponent],
 })

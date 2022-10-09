@@ -43,3 +43,4 @@ Thumbs.db
 *.bak
 
 publish.sh
+/documentation/

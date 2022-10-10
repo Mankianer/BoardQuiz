@@ -17,6 +17,13 @@ export interface Kategorie {
 export class Game1State {
   public countdown: number = 0;
   public current_Card: Card = {text: "Runde 1", title: "0", team: ""};
+  public joker: {fon: boolean, crowd: boolean}[] = [];
+
+  constructor() {
+    for (let i = 0; i < 4; i++) {
+      this.joker.push({fon: true, crowd: true});
+    }
+  }
 }
 
 @Injectable({
@@ -29,7 +36,11 @@ export class Game1Service {
     return this.game1State.current_Card;
   }
 
-  public game1State = new Game1State();
+  public getJoker(team: number, joker: 'fon' | 'crowd') {
+    return this.game1State.joker[team][joker];
+  }
+
+  private game1State = new Game1State();
 
   constructor(public gameKeeper: GameKeeperService, private undoService: UndoService) {
     for (let i = 0; i < this.content.length; i++) {
@@ -58,5 +69,10 @@ export class Game1Service {
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();
     }
+  }
+
+  useJoker(team: number, joker: 'fon' | 'crowd') {
+    this.undoService.createSavepoint("joker");
+    this.game1State.joker[team][joker] = false;
   }
 }

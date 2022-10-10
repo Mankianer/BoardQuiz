@@ -1,14 +1,46 @@
 <div>
   <div class="scoreBox red bg-red" (click)="selectRed()">
     <p>{{gameKeeper.score_red}}</p>
+    <div class="jokerbox top-box" (click)="game1.useJoker(0, 'crowd')">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game1.getJoker(0, 'crowd')"></div>
+    </div>
+    <div class="jokerbox bottom-box" (click)="game1.useJoker(0, 'fon')">
+      <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
+      <div *ngIf="!game1.getJoker(0, 'fon')"></div>
+    </div>
   </div>
   <div class="scoreBox green bg-green" (click)="selectGreen()">
     <p>{{gameKeeper.score_green}}</p>
+    <div class="jokerbox top-box" (click)="game1.useJoker(1, 'crowd')">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game1.getJoker(1, 'crowd')"></div>
+    </div>
+    <div class="jokerbox bottom-box" (click)="game1.useJoker(1, 'fon')">
+      <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
+      <div *ngIf="!game1.getJoker(1, 'fon')"></div>
+    </div>
   </div>
   <div class="scoreBox blue bg-blue" (click)="selectBlue()">
     <p>{{gameKeeper.score_blue}}</p>
+    <div class="jokerbox top-box" (click)="game1.useJoker(2, 'crowd')">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game1.getJoker(2, 'crowd')"></div>
+    </div>
+    <div class="jokerbox bottom-box" (click)="game1.useJoker(2, 'fon')">
+      <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
+      <div *ngIf="!game1.getJoker(2, 'fon')"></div>
+    </div>
   </div>
   <div class="scoreBox purple bg-purple" (click)="selectPurple()">
     <p>{{gameKeeper.score_purple}}</p>
+    <div class="jokerbox top-box" (click)="game1.useJoker(3, 'crowd')">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game1.getJoker(3, 'crowd')"></div>
+    </div>
+    <div class="jokerbox bottom-box" (click)="game1.useJoker(3, 'fon')">
+      <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
+      <div *ngIf="!game1.getJoker(3, 'fon')"></div>
+    </div>
   </div>
 </div>

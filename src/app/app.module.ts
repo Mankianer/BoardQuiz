@@ -21,7 +21,7 @@ import {TimerComponent} from './timer/timer.component';
 import {KeyboardShortcutsModule} from "ng-keyboard-shortcuts";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, KeyboardShortcutsModule.forRoot()],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, KeyboardShortcutsModule.forRoot(), ],
   declarations: [AppComponent, CardComponent, Game1Component, StartScreenComponent, Game2Component, TransitionScreenComponent, PlaygroundComponent, ScoreboardComponent, ScoreboardComponentGame2, RowComponent, TimerComponent],
   bootstrap: [AppComponent],
 })

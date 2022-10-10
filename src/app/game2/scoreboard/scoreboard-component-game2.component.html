@@ -3,20 +3,36 @@
     <div class="scoreBox bg-red">
       <p>{{gameKeeper.score_red}}</p>
     </div>
+    <div class="jokerbox top-box" (click)="game2.setJoker(0)">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game2.getJoker(0)"></div>
+    </div>
   </div>
   <div class="container">
     <div class="scoreBox bg-green">
       <p>{{gameKeeper.score_green}}</p>
+    </div>
+    <div class="jokerbox top-box" (click)="game2.setJoker(1)">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game2.getJoker(1)"></div>
     </div>
   </div>
   <div class="container">
     <div class="scoreBox bg-blue">
       <p>{{gameKeeper.score_blue}}</p>
     </div>
+    <div class="jokerbox top-box" (click)="game2.setJoker(2)">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game2.getJoker(2)"></div>
+    </div>
   </div>
   <div class="container">
     <div class="scoreBox bg-purple">
       <p>{{gameKeeper.score_purple}}</p>
+    </div>
+    <div class="jokerbox top-box" (click)="game2.setJoker(3)">
+      <img src="assets/joker/publikum.png">
+      <div *ngIf="!game2.getJoker(3)"></div>
     </div>
   </div>
   <div class="container">

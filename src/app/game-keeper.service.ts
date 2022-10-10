@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {UndoService} from "./undo.service";
 
 export class GameState {
-  public _round: number = 1;
+  public _round: number = 0;
   public _score_red: number = 0;
   public _score_green: number = 0;
   public _score_blue: number = 0;

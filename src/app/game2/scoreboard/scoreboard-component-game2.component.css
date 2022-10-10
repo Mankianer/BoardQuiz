@@ -33,4 +33,39 @@
   font-size: 50px;
   text-align: center;
 }
+.jokerbox {
+  background-color: #7fc9ff;
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10%;
+  border-color: #0c5593;
+  border-width: 3px;
+  border-style: solid;
+  overflow: hidden;
+  position: relative;
+  right: 10%;
+}
+
+.top-box {
+  top: -10%;
+  rotate: 5deg;
+}
+
+
+.jokerbox > img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.jokerbox > div {
+  position: absolute;
+  width: 180%;
+  left: -40%;
+  height: 20%;
+  background-color: gray;
+  top: 40%;
+  rotate: 45deg;
+}
+
 

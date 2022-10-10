@@ -4,6 +4,12 @@ import {UndoService} from "../undo.service";
 
 export class Game2State {
   currentRound = 1;
+  public joker: boolean[] = [];
+  constructor() {
+    for (let i = 0; i < 4; i++) {
+      this.joker.push(true);
+    }
+  }
 }
 
 @Injectable({
@@ -11,7 +17,7 @@ export class Game2State {
 })
 export class Game2Service {
 
-  state: Game2State = new Game2State();
+  private state: Game2State = new Game2State();
   get currentRound(): number {
     return this.state.currentRound;
   }
@@ -52,5 +58,16 @@ export class Game2Service {
 
   public getPointsForRound(round: number): number {
     return this.pointArray[(round - 1) % this.pointArray.length]
+  }
+
+  getJoker(team: number): boolean {
+    return this.state.joker[team];
+  }
+
+  setJoker(team: number) {
+    if(!this.state.joker[team]) return;
+    this.undoService.createSavepoint("game2 joker");
+    this.state.joker[team] = false;
+
   }
 }

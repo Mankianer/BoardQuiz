@@ -45,7 +45,10 @@ export class CardComponent implements OnInit {
   @Input() text: string = 'Hier steht dann deine Frage?';
   @Input() isHeader: boolean = false;
 
-  private state: CardContent = new CardContent(); //TODO: card content in gameservice
+  get state(): CardContent {
+    return this.game1.loadCardContent(this.id);
+  }
+
   get flip() {
     return this.state.flip;
   }
@@ -64,20 +67,21 @@ export class CardComponent implements OnInit {
 
   constructor(public game1: Game1Service, private undoService: UndoService) {
 
-    this.undoService.savepointCreateEventEmitter.subscribe((count) => {
-      if(this.id == -1) return;
-      this.undoService.saveState(this.state, "cardstate" + this.id, count);
-    });
-
-    this.undoService.undoEventEmitter.subscribe((count) => {
-      if(this.id == -1) return;
-      let state = this.undoService.getState("cardstate" + this.id, count);
-      if(state == null) return;
-      this.state = state;
-    });
+    // this.undoService.savepointCreateEventEmitter.subscribe((count) => {
+    //   if(this.id == -1) return;
+    //   this.undoService.saveState(this.state, "cardstate" + this.id, count);
+    // });
+    //
+    // this.undoService.undoEventEmitter.subscribe((count) => {
+    //   if(this.id == -1) return;
+    //   let state = this.undoService.getState("cardstate" + this.id, count);
+    //   if(state == null) return;
+    //   this.state = state;
+    // });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 
   toggleFlip() {

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import FragenBeispiel from '../../assets/beispielFragen.json';
 import {GameKeeperService} from "../game-keeper.service";
 import {UndoService} from "../undo.service";
+import {CardContent} from "./card/card.component";
 
 export interface Card {
   title: string;
@@ -18,6 +19,7 @@ export class Game1State {
   public countdown: number = 0;
   public current_Card: Card = {text: "Runde 1", title: "0", team: ""};
   public joker: {fon: boolean, crowd: boolean}[] = [];
+  public cards: [id: number, card: CardContent][] = [];
 
   constructor() {
     for (let i = 0; i < 4; i++) {
@@ -59,13 +61,13 @@ export class Game1Service {
 
   selectCard(card: Card): void {
     this.game1State.current_Card = card;
-    if(card.title != "0") this.undoService.createSavepoint("current_Card");
   }
 
   nextRound() {
     if(this.current_Card.title != "0") {this.game1State.countdown--; }
     if(this.current_Card.team == "") this.current_Card.team = "non";
     this.selectCard({title: "0", text: "Nächste Frage", team: ""})
+    this.undoService.createSavepoint("next Round");
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();
     }
@@ -75,5 +77,17 @@ export class Game1Service {
     if(!this.game1State.joker[team][joker]) return;
     this.undoService.createSavepoint("joker");
     this.game1State.joker[team][joker] = false;
+  }
+
+  loadCardContent(cardId: number): CardContent {
+    if(cardId == -1) return new CardContent();
+    let cardContent1 = this.game1State.cards.find((value) => value[0] == cardId);
+    if (cardContent1 !== undefined) {
+      return cardContent1[1];
+    } else {
+      let cardContent = new CardContent();
+      this.game1State.cards.push([cardId, cardContent]);
+      return cardContent;
+    }
   }
 }

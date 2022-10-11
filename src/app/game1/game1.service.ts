@@ -8,6 +8,7 @@ export interface Card {
   title: string;
   text: string;
   team: 'red' | 'blue' | 'green' | 'purple' | 'non' | '';
+  answer: string;
 }
 
 export interface Kategorie {
@@ -17,7 +18,7 @@ export interface Kategorie {
 
 export class Game1State {
   public countdown: number = 0;
-  public current_Card: Card = {text: "Runde 1", title: "0", team: ""};
+  public current_Card: Card = {text: "Runde 1", title: "0", team: "", answer: ""};
   public joker: {fon: boolean, crowd: boolean}[] = [];
   public cards: [id: number, card: CardContent][] = [];
 
@@ -67,7 +68,7 @@ export class Game1Service {
   nextRound() {
     if(this.current_Card.title != "0") {this.game1State.countdown--; }
     if(this.current_Card.team == "") this.current_Card.team = "non";
-    this.selectCard({title: "0", text: "Nächste Frage", team: ""})
+    this.selectCard({title: "0", text: this.current_Card.answer, team: "", answer: ""});
     // this.undoService.createSavepoint("next Round");
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();
@@ -84,7 +85,6 @@ export class Game1Service {
     if(cardId == -1) return new CardContent();
     let cardContent1 = this.game1State.cards.find((value) => value[0] == cardId);
     if (cardContent1) {
-      console.log("found");
       return cardContent1[1];
     } else {
       let cardContent = new CardContent();

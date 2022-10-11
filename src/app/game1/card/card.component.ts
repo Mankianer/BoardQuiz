@@ -43,6 +43,7 @@ export class CardComponent implements OnInit {
   @Input() title: string = 'Title';
   @Input() id: number = -1;
   @Input() text: string = 'Hier steht dann deine Frage?';
+  @Input() answer: string = 'Antwort';
   @Input() isHeader: boolean = false;
 
   get state(): CardContent {

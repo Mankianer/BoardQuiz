@@ -10,6 +10,7 @@
       *ngFor="let f of c.fragen; let j = index"
       [title]="f[0]"
       [text]="f[1]"
+      [answer]="f[2]"
       [id]="i * 10 + j"
     ></app-card>
   </div>

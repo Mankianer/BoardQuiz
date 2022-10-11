@@ -7,6 +7,10 @@
       <img src="assets/joker/platz.png">
       <div *ngIf="!game2.getJoker(0)"></div>
     </div>
+    <div style="left: 0">
+      <div class="subbox" style="left: 0%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 5)"><p>-5</p></div>
+      <div class="subbox" style="left: 6%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 10)"><p>-10</p></div>
+    </div>
   </div>
   <div class="container">
     <div class="scoreBox bg-green">
@@ -16,6 +20,8 @@
       <img src="assets/joker/platz.png">
       <div *ngIf="!game2.getJoker(1)"></div>
     </div>
+    <div class="subbox" style="left: 20%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 5)"><p>-5</p></div>
+    <div class="subbox" style="left: 26%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 10)"><p>-10</p></div>
   </div>
   <div class="container">
     <div class="scoreBox bg-blue">
@@ -25,6 +31,8 @@
       <img src="assets/joker/platz.png">
       <div *ngIf="!game2.getJoker(2)"></div>
     </div>
+    <div class="subbox" style="left: 40%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 5)"><p>-5</p></div>
+    <div class="subbox" style="left: 46%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 10)"><p>-10</p></div>
   </div>
   <div class="container">
     <div class="scoreBox bg-purple">
@@ -34,6 +42,8 @@
       <img src="assets/joker/platz.png">
       <div *ngIf="!game2.getJoker(3)"></div>
     </div>
+    <div class="subbox" style="left: 60%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(3, 5)"><p>-5</p></div>
+    <div class="subbox" style="left: 66%" *ngIf="game2.isSubBoxVisible" (click)="gameKeeper.regelBruch(3, 10)"><p>-10</p></div>
   </div>
   <div class="container">
   </div>

@@ -69,3 +69,24 @@
 }
 
 
+.subbox {
+  background-color: #a94442;
+  width: 5%;
+  aspect-ratio: 2/1;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10%;
+  border: 3px solid #272727;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  color: rgba(0, 0, 0, .87);
+
+}
+
+
+.subbox > p {
+  margin-top: 4%;
+}
+

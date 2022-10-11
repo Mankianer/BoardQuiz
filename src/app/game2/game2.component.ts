@@ -29,6 +29,10 @@ export class Game2Component implements OnInit, AfterViewInit {
     this.undoService.undo("transition-screen");
   }
 
+  regeln() {
+    this.game2.isSubBoxVisible = !this.game2.isSubBoxVisible;
+  }
+
   ngAfterViewInit(): void {
     this.shortcuts.push({
       key: ["ctrl + z"],
@@ -36,7 +40,13 @@ export class Game2Component implements OnInit, AfterViewInit {
       description: "Strg + Z",
       command: this.undo.bind(this),
       preventDefault: true
-    });
+    },{
+        key: ["r"],
+        label: "Regeln",
+        description: "Zeigt Punktabzugknöpfe an",
+        command: this.regeln.bind(this),
+        preventDefault: true
+      });
     this.undoService.reset();
     this.undoService.createSavepoint("Game 2 Init");
   }

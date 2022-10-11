@@ -17,6 +17,7 @@ export class Game2State {
 })
 export class Game2Service {
 
+  public isSubBoxVisible: boolean = false;
   private state: Game2State = new Game2State();
   get currentRound(): number {
     return this.state.currentRound;

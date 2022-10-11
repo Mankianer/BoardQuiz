@@ -95,5 +95,12 @@ export class GameKeeperService {
     this.gamestate._next_round = value;
   }
 
+  regelBruch(team: number, amount: number){
+    this.undoService.createSavepoint("regelbruch");
+    if(team == 0) this.score_red -= amount;
+    if(team == 1) this.score_green -= amount;
+    if(team == 2) this.score_blue -= amount;
+    if(team == 3) this.score_purple -= amount;
+  }
 
 }

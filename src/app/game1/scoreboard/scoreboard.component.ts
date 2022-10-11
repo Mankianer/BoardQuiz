@@ -40,4 +40,5 @@ export class ScoreboardComponent implements OnInit {
     this.gameKeeper.score_purple += this.getScore();
   }
 
+
 }

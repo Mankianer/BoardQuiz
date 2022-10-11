@@ -9,6 +9,8 @@
       <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
       <div *ngIf="!game1.getJoker(0, 'fon')"></div>
     </div>
+    <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 5)"><p>-5</p></div>
+    <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 10)"><p>-10</p></div>
   </div>
   <div class="scoreBox green bg-green" (click)="selectGreen()">
     <p>{{gameKeeper.score_green}}</p>
@@ -20,6 +22,8 @@
       <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
       <div *ngIf="!game1.getJoker(1, 'fon')"></div>
     </div>
+    <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 5)"><p>-5</p></div>
+    <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 10)"><p>-10</p></div>
   </div>
   <div class="scoreBox blue bg-blue" (click)="selectBlue()">
     <p>{{gameKeeper.score_blue}}</p>
@@ -31,6 +35,8 @@
       <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
       <div *ngIf="!game1.getJoker(2, 'fon')"></div>
     </div>
+    <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 5)"><p>-5</p></div>
+    <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 10)"><p>-10</p></div>
   </div>
   <div class="scoreBox purple bg-purple" (click)="selectPurple()">
     <p>{{gameKeeper.score_purple}}</p>
@@ -42,5 +48,7 @@
       <img src="assets/joker/telefon.png" style="width: 100%; margin: auto; display: block;">
       <div *ngIf="!game1.getJoker(3, 'fon')"></div>
     </div>
+    <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(3, 5)"><p>-5</p></div>
+    <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(3, 10)"><p>-10</p></div>
   </div>
 </div>

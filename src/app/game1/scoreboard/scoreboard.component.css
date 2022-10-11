@@ -40,8 +40,8 @@
   background-color: #7fc9ff;
   width: 50%;
   aspect-ratio: 1 / 1;
-  border-radius: 10%;
   border-color: #0c5593;
+  border-radius: 10%;
   border-width: 3px;
   border-style: solid;
   overflow: hidden;
@@ -50,12 +50,12 @@
 }
 
 .top-box {
-  top: -10%;
+  top: -15%;
   rotate: 5deg;
 }
 
 .bottom-box {
-  bottom: -10%;
+  bottom: -0%;
   rotate: -7deg;
 }
 
@@ -73,4 +73,38 @@
   background-color: gray;
   top: 40%;
   rotate: 45deg;
+}
+
+.subbox {
+  background-color: #a94442;
+  width: 45%;
+  aspect-ratio: 2/1;
+  position: absolute;
+  top: 100%;
+  border-radius: 10%;
+  border: 3px solid #272727;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  color: rgba(0, 0, 0, .87);
+
+}
+
+.subbox.right {
+  right: 0%;
+
+}
+.subbox.left {
+  left: 0%;
+
+}
+
+.subbox > p {
+  margin-top: 4%;
+}
+
+.purple > .subbox {
+  top: unset;
+  bottom: 100%;
 }

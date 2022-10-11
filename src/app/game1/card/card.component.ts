@@ -53,7 +53,7 @@ export class CardComponent implements OnInit {
     return this.state.flip;
   }
   get team() {
-    return this.state.team;
+    return this.game1.loadCardContent(this.id).team;
   }
   set flip(value: string) {
     if(this.state.flip == value) return;
@@ -61,6 +61,8 @@ export class CardComponent implements OnInit {
     this.state.flip = value;
   }
   set team(value: 'red' | 'blue' | 'green' | 'purple' | 'non' | '') {
+    if(this.state.team == value) return;
+    this.undoService.createSavepoint("card team")
     this.state.team = value;
   }
 

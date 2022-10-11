@@ -33,6 +33,7 @@ export class Game1State {
 })
 export class Game1Service {
 
+  public isSubBoxVisible: boolean = false;
   public content: Kategorie[] = FragenBeispiel;
   get current_Card(): Card {
     return this.game1State.current_Card;
@@ -67,7 +68,7 @@ export class Game1Service {
     if(this.current_Card.title != "0") {this.game1State.countdown--; }
     if(this.current_Card.team == "") this.current_Card.team = "non";
     this.selectCard({title: "0", text: "Nächste Frage", team: ""})
-    this.undoService.createSavepoint("next Round");
+    // this.undoService.createSavepoint("next Round");
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();
     }
@@ -82,7 +83,8 @@ export class Game1Service {
   loadCardContent(cardId: number): CardContent {
     if(cardId == -1) return new CardContent();
     let cardContent1 = this.game1State.cards.find((value) => value[0] == cardId);
-    if (cardContent1 !== undefined) {
+    if (cardContent1) {
+      console.log("found");
       return cardContent1[1];
     } else {
       let cardContent = new CardContent();

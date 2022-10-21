@@ -19,30 +19,9 @@ export class Game1Component implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
 
-  undo() {
-    this.undoService.undo("game1");
-  }
-
-  regeln() {
-    this.game1.isSubBoxVisible = !this.game1.isSubBoxVisible;
-  }
-
   ngAfterViewInit(): void {
-    this.shortcuts.push({
-        key: ["ctrl + z"],
-        label: "Undo",
-        description: "Strg + Z",
-        command: this.undo.bind(this),
-        preventDefault: true
-      },
-      {
-        key: ["r"],
-        label: "Regeln",
-        description: "Zeigt Punktabzugknöpfe an",
-        command: this.regeln.bind(this),
-        preventDefault: true
-      });
     this.undoService.createSavepoint("game1");
   }
+
 
 }

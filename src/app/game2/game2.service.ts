@@ -17,7 +17,12 @@ export class Game2State {
 })
 export class Game2Service {
 
-  public isSubBoxVisible: boolean = false;
+  get isSubBoxVisible() {
+    return this.gameKeeper.isSubBoxVisible;
+  };
+  set isSubBoxVisible(value: boolean) {
+    this.gameKeeper.isSubBoxVisible = value;
+  };
   private state: Game2State = new Game2State();
   get currentRound(): number {
     return this.state.currentRound;
@@ -70,5 +75,9 @@ export class Game2Service {
     this.undoService.createSavepoint("game2 joker");
     this.state.joker[team] = false;
 
+  }
+
+  setRound(round: number) {
+    this.gameKeeper.round = round;
   }
 }

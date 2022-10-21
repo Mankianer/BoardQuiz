@@ -17,6 +17,7 @@ export class GameState {
 export class GameKeeperService {
 
   private gamestate = new GameState();
+  public isSubBoxVisible: boolean = false;
 
 
 

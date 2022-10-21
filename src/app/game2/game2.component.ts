@@ -8,7 +8,7 @@ import {ShortcutInput} from "ng-keyboard-shortcuts";
   templateUrl: './game2.component.html',
   styleUrls: ['./game2.component.css']
 })
-export class Game2Component implements OnInit, AfterViewInit {
+export class Game2Component implements OnInit {
 
   @Input("rounds") rounds = "1";
   @Input("force-winner") forceWinner = "false";
@@ -25,28 +25,7 @@ export class Game2Component implements OnInit, AfterViewInit {
     this.game2.pointArray = this.pointArray;
   }
 
-  undo() {
-    this.undoService.undo("transition-screen");
-  }
-
-  regeln() {
-    this.game2.isSubBoxVisible = !this.game2.isSubBoxVisible;
-  }
-
   ngAfterViewInit(): void {
-    this.shortcuts.push({
-      key: ["ctrl + z"],
-      label: "Undo",
-      description: "Strg + Z",
-      command: this.undo.bind(this),
-      preventDefault: true
-    },{
-        key: ["r"],
-        label: "Regeln",
-        description: "Zeigt Punktabzugknöpfe an",
-        command: this.regeln.bind(this),
-        preventDefault: true
-      });
     this.undoService.reset();
     this.undoService.createSavepoint("Game 2 Init");
   }
@@ -54,4 +33,6 @@ export class Game2Component implements OnInit, AfterViewInit {
   counter() {
     return new Array(this.game2.maxRounds);
   }
+
+
 }

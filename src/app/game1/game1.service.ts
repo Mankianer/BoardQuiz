@@ -34,7 +34,9 @@ export class Game1State {
 })
 export class Game1Service {
 
-  public isSubBoxVisible: boolean = false;
+  get isSubBoxVisible() {
+    return this.gameKeeper.isSubBoxVisible;
+  };
   public content: Kategorie[] = FragenBeispiel;
   get current_Card(): Card {
     return this.game1State.current_Card;
@@ -73,6 +75,10 @@ export class Game1Service {
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();
     }
+  }
+
+  setRound(round: number) {
+    this.gameKeeper.round = round;
   }
 
   useJoker(team: number, joker: 'fon' | 'crowd') {

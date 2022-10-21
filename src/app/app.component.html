@@ -1,3 +1,4 @@
+<ng-keyboard-shortcuts [shortcuts]="shortcuts"></ng-keyboard-shortcuts>
 <div class="main-container">
   <app-start-screen *ngIf="gameKeeper.round == 0"></app-start-screen>
   <app-game1 *ngIf="gameKeeper.round == 1" ></app-game1>
@@ -7,3 +8,4 @@
   <app-transition-screen *ngIf="gameKeeper.round == 5"></app-transition-screen>
   <app-transition-screen *ngIf="gameKeeper.round ==-1"></app-transition-screen>
 </div>
+<ng-keyboard-shortcuts-help [key]="'f1'" [closeKey]="'escape'" [title]="'Help'"></ng-keyboard-shortcuts-help>

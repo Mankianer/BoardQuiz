@@ -1,39 +1,39 @@
 [
   {
-    "kategorie": "Unnützes Wissen",
-    "fragen": [
-      ["5", "In welchem Land wohnen die meisten Menschen?", "Antwort1"],
-      ["10", "Welches Getränk galt bis 2011 in Russland nicht als alkoholisches Getränk?", "Antwort2"],
-      ["20", "Wie heißt Harry Potters Besen?", "Antwort2"],
-      ["50", "Welche 2 Körperteile wachsen dein Leben lang?", "Antwort"]
-    ]
-  },
-  {
-    "kategorie": "Film & Musik",
-    "fragen": [
-      ["5", " Welche von den Liedern sind Songs von Justin Bieber?", "Antwort"],
-      ["10", "Wie viele Film-Teile hat der Film 'fast & the furios'?", "Antwort"],
-      ["20", "Wer ist der Hauptdarsteller aus 'The Lover Doctor'?", "Antwort"],
-      ["50", "Welches Youtube Video hat die meisten Aufrufe?", "Antwort"]
-    ]
-  },
-  {
     "kategorie": "Sport & Freizeit",
     "fragen": [
-      ["5", "Welche Nummer hat C. Ronaldo?", "Antwort"],
-      ["10", "Was ist der populärste Sport in Amerika?", "Antwort"],
-      ["20", "Aus welchem Land kommt der Kampfsport Judo?", "Antwort"],
-      ["50", "Wie alt war Kylian Mbappé als er die WM gewann?", "Antwort"]
+      ["5", "Welche Sportart ist die beliebteste Sportart in England?", "Rugby", "Rugby, Basketball und Tennis"],
+      ["10", "Wie oft gewann Deutschland die Fußball-Männer-Meisterschaft?", "4", "4, 3 oder 2"],
+      ["20", "Welche Sportart existiert nicht?", "Kaugummiweitspucken", "Tauchschach, Highheels rennen, Kaugummiweitspucken"],
+      ["50", "In welchen Land ist Pferderennen am beliebtesten", "Australien", "Australien, Japan oder England"]
+    ]
+  },
+  {
+    "kategorie": "Entertainment",
+    "fragen": [
+      ["5", "In welchem Jahr wurd das Lied auf YouTube Despacito veröffentlicht?", "2017", "2017, 2019, 2016"],
+      ["10", "Wie viele Teile von der berühmten Filmreihe Hangover gibt es?", "4", "4, 3 oder 2"],
+      ["20", "Wer ist beim Lied „Stuck with you“ von Ariana Grande der feature?", "Justin Bieber", "The Weeknd, Justin Bieber, Eminem"],
+      ["50", "Wie heißt der Schauspieler von Barney Stinson aus der SitCom „How I Met your Mother“?", "Neil Patrick Harris", "Jason Segel, Josh Radnor, Neil Patrick Harris"]
+    ]
+  },
+  {
+    "kategorie": "Unnutzes Wissen",
+    "fragen": [
+      ["5", "Wie viele Züge hat die Standard Vape Elfbar?", "600", "1000, 800, 600"],
+      ["10", "Was kommt nicht in einem Sex on the Beach rein?", "Maracujasaft", "Maracujasaft, Orangensaft, Cranberrysaft"],
+      ["20", "Seit wann gibt es das Dietrich-Keuning-Haus?", "40", "32, 37, 40"],
+      ["50", "Seit wann, ist es Lehrern in Deutschland nichtmehr erlaubt Schüler zu schlagen?", "Antwort", "1973, 1960, 1950"]
 
     ]
   },
   {
-    "kategorie": "Allgemeinwissen",
+    "kategorie": "❓",
     "fragen": [
-      ["5", "Wie viele Bundesländer hat Deutschland?", "Antwort"],
-      ["10", "Was ist die Hauptstadt von Australien?", "Antwort"],
-      ["20", "Was ist die Durchschnittliche Penisgröße in Deutschland?", "Antwort"],
-      ["50", "Wie viele Planeten gehören zu unserem Sonnensystem?", "Antwort"]
+      ["5", "Wie viel kostet eine Thunfischdose in Lidl?", "1.49€", "1.49€, 1.69€, 1.79€"],
+      ["10", "Wer gewann die letzte Staffel GNTM?", "Lou-Anne", "Lou-Anne, Alex, Martina"],
+      ["20", "Wie viele Folgen hat Naruto Shippuden?", "500", "500, 600, 400"],
+      ["50", "Wie viele Follower hat Louisa Jindaoui auf Instagram?", "1.8", "1.8 , 1.6, 1.5"]
     ]
   }
 ]

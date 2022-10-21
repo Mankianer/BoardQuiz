@@ -1,6 +1,6 @@
 <div>
-  <div class="scoreBox red bg-red" (click)="selectRed()">
-    <p>{{gameKeeper.score_red}}</p>
+  <div class="scoreBox red bg-red" >
+    <p (click)="selectRed()">{{gameKeeper.score_red}}</p>
     <div class="jokerbox top-box" (click)="game1.useJoker(0, 'crowd')">
       <img src="assets/joker/publikum.png">
       <div *ngIf="!game1.getJoker(0, 'crowd')"></div>
@@ -12,8 +12,8 @@
     <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 5)"><p>-5</p></div>
     <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(0, 10)"><p>-10</p></div>
   </div>
-  <div class="scoreBox green bg-green" (click)="selectGreen()">
-    <p>{{gameKeeper.score_green}}</p>
+  <div class="scoreBox green bg-green" >
+    <p (click)="selectGreen()">{{gameKeeper.score_green}}</p>
     <div class="jokerbox top-box" (click)="game1.useJoker(1, 'crowd')">
       <img src="assets/joker/publikum.png">
       <div *ngIf="!game1.getJoker(1, 'crowd')"></div>
@@ -25,8 +25,8 @@
     <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 5)"><p>-5</p></div>
     <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(1, 10)"><p>-10</p></div>
   </div>
-  <div class="scoreBox blue bg-blue" (click)="selectBlue()">
-    <p>{{gameKeeper.score_blue}}</p>
+  <div class="scoreBox blue bg-blue" >
+    <p (click)="selectBlue()">{{gameKeeper.score_blue}}</p>
     <div class="jokerbox top-box" (click)="game1.useJoker(2, 'crowd')">
       <img src="assets/joker/publikum.png">
       <div *ngIf="!game1.getJoker(2, 'crowd')"></div>
@@ -38,8 +38,8 @@
     <div class="subbox left" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 5)"><p>-5</p></div>
     <div class="subbox right" *ngIf="game1.isSubBoxVisible" (click)="gameKeeper.regelBruch(2, 10)"><p>-10</p></div>
   </div>
-  <div class="scoreBox purple bg-purple" (click)="selectPurple()">
-    <p>{{gameKeeper.score_purple}}</p>
+  <div class="scoreBox purple bg-purple">
+    <p  (click)="selectPurple()">{{gameKeeper.score_purple}}</p>
     <div class="jokerbox top-box" (click)="game1.useJoker(3, 'crowd')">
       <img src="assets/joker/publikum.png">
       <div *ngIf="!game1.getJoker(3, 'crowd')"></div>

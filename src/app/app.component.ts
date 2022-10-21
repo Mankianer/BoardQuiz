@@ -15,6 +15,7 @@ export class AppComponent implements AfterViewInit {
 
 
   constructor(public gameKeeper: GameKeeperService, private undoService: UndoService) {
+    undoService.reset();
   }
 
   undo() {

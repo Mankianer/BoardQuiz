@@ -9,6 +9,7 @@ export interface Card {
   text: string;
   team: 'red' | 'blue' | 'green' | 'purple' | 'non' | '';
   answer: string;
+  options: string;
 }
 
 export interface Kategorie {
@@ -18,7 +19,8 @@ export interface Kategorie {
 
 export class Game1State {
   public countdown: number = 0;
-  public current_Card: Card = {text: "Runde 1", title: "0", team: "", answer: ""};
+  // public current_Card: Card = {text: "Runde 1", title: "0", team: "", answer: ""};
+  currentCardId: number = -1;
   public joker: {fon: boolean, crowd: boolean}[] = [];
   public cards: [id: number, card: CardContent][] = [];
 
@@ -34,13 +36,25 @@ export class Game1State {
 })
 export class Game1Service {
 
+  isOptionShown = false;
+
+  public switchOptionShown() {
+    if(this.current_Card.options == "") return;
+    this.isOptionShown = !this.isOptionShown;
+  }
+
   get isSubBoxVisible() {
     return this.gameKeeper.isSubBoxVisible;
   };
   public content: Kategorie[] = FragenBeispiel;
   get current_Card(): Card {
-    return this.game1State.current_Card;
+    if(this.game1State.currentCardId == -1) return {text: "Runde 1", title: "0", team: "", answer: "", options: ""};
+    let find = this.game1State.cards.find( (value) => value[0] == this.game1State.currentCardId);
+    if(find == undefined) return new CardContent();
+    return find[1];
+
   }
+
 
   public getJoker(team: number, joker: 'fon' | 'crowd') {
     return this.game1State.joker[team][joker];
@@ -49,6 +63,7 @@ export class Game1Service {
   private game1State = new Game1State();
 
   constructor(public gameKeeper: GameKeeperService, private undoService: UndoService) {
+
     for (let i = 0; i < this.content.length; i++) {
       this.game1State.countdown += this.content[i].fragen.length;
     }
@@ -61,16 +76,29 @@ export class Game1Service {
       if(state == null) return;
       this.game1State = state;
     });
+
+    let answerCard = new CardContent();
+    answerCard.title = "0";
+    answerCard.text = "Antwort";
+    answerCard.team = "";
+    answerCard.answer = "";
+    this.game1State.cards.push([-2, answerCard]);
   }
 
-  selectCard(card: Card): void {
-    this.game1State.current_Card = card;
+  selectCard(cardId: number): void {
+    this.isOptionShown = false;
+    this.game1State.currentCardId = cardId;
+  }
+
+  showAnswer(answer: string) {
+    this.game1State.cards.find((value) => value[0] == -2)![1].text = answer;
+    this.selectCard(-2);
   }
 
   nextRound() {
     if(this.current_Card.title != "0") {this.game1State.countdown--; }
     if(this.current_Card.team == "") this.current_Card.team = "non";
-    this.selectCard({title: "0", text: this.current_Card.answer, team: "", answer: ""});
+    this.showAnswer(this.current_Card.answer);
     // this.undoService.createSavepoint("next Round");
     if(this.game1State.countdown == 0) {
       this.gameKeeper.nextGame();

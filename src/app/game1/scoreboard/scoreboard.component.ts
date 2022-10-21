@@ -15,6 +15,7 @@ export class ScoreboardComponent implements OnInit {
   }
 
   private getScore(): number {
+    // console.log(this.game1.current_Card);
     let score: number = parseInt(this.game1.current_Card.title);
     this.game1.nextRound();
     return score;

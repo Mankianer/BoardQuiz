@@ -26,7 +26,7 @@ export class Game2Component implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    this.undoService.reset();
+    // this.undoService.reset();
     this.undoService.createSavepoint("Game 2 Init");
   }
 

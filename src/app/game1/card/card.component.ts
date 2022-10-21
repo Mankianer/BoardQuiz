@@ -7,13 +7,17 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-import {Game1Service} from "../game1.service";
+import {Card, Game1Service} from "../game1.service";
 import {UndoService} from "../../undo.service";
 
 
-export class CardContent {
+export class CardContent implements Card{
   flip: string = 'inactive';
-  public team: 'red' | 'blue' | 'green' | 'purple' | 'non' | ''  = ''
+  public team: 'red' | 'blue' | 'green' | 'purple' | 'non' | ''  = '';
+  title: string = "0";
+  text: string = "Runde 1";
+  answer: string = "Antwort-Text";
+  options: string = "";
 }
 
 @Component({
@@ -40,10 +44,39 @@ export class CardContent {
   ],
 })
 export class CardComponent implements OnInit {
-  @Input() title: string = 'Title';
+  @Input('title') _title: string = 'Title';
+  get title(): string {
+    if(this.isHeader) return this._title;
+    return this.state.title;
+  }
+  set title(value: string) {
+    this.state.title = value;
+  }
   @Input() id: number = -1;
-  @Input() text: string = 'Hier steht dann deine Frage?';
-  @Input() answer: string = 'Antwort';
+  @Input('text') _text: string = 'Hier steht dann deine Frage?';
+  get text(): string {
+    if(this.isHeader) return this._text;
+    return this.state.text;
+  }
+  set text(value: string) {
+    this.state.text = value;
+  }
+  @Input('answer') _answer: string = 'Antwort';
+  get answer(): string {
+    if(this.isHeader) return this._answer;
+    return this.state.answer;
+  }
+  set answer(value: string) {
+    this.state.answer = value;
+  }
+  @Input('options') _options: string = "";
+  get options(): string {
+    if(this.isHeader) return this._options;
+    return this.state.options;
+  }
+  set options(value: string) {
+    this.state.options = value;
+  }
   @Input() isHeader: boolean = false;
 
   get state(): CardContent {
@@ -84,13 +117,17 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.title = this._title;
+    this.text = this._text;
+    this.answer = this._answer;
+    this.options = this._options;
   }
 
 
   toggleFlip() {
     if (!this.isHeader && !this.isFlipped() && this.game1.current_Card.title == "0") {
       this.flip = this.isFlipped() ? 'inactive' : 'active';
-      this.game1.selectCard(this);
+      this.game1.selectCard(this.id);
     }
   }
 

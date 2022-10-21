@@ -17,8 +17,6 @@ export class Score {
 })
 export class TransitionScreenComponent implements OnInit, AfterViewInit {
 
-  shortcuts: ShortcutInput[] = [];
-
   constructor(public gameKeeper: GameKeeperService, private undoService: UndoService) {
   }
 
@@ -30,13 +28,6 @@ export class TransitionScreenComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.shortcuts.push({
-      key: ["ctrl + z"],
-      label: "Undo",
-      description: "Strg + Z",
-      command: this.undo.bind(this),
-      preventDefault: true
-    });
     this.undoService.createSavepoint("transition-screen");
   }
 

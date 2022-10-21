@@ -2,38 +2,38 @@
   {
     "kategorie": "Sport & Freizeit",
     "fragen": [
-      ["5", "Welche Sportart ist die beliebteste Sportart in England?", "Rugby", "Rugby, Basketball und Tennis"],
-      ["10", "Wie oft gewann Deutschland die Fußball-Männer-Meisterschaft?", "4", "4, 3 oder 2"],
-      ["20", "Welche Sportart existiert nicht?", "Kaugummiweitspucken", "Tauchschach, Highheels rennen, Kaugummiweitspucken"],
-      ["50", "In welchen Land ist Pferderennen am beliebtesten", "Australien", "Australien, Japan oder England"]
+      ["5", "Welche Sportart ist die beliebteste Sportart in England?", "Rugby", "Rugby, Basketball, Tennis oder Rugby"],
+      ["10", "Wie oft gewann Deutschland die Fußball-Männer-Meisterschaft?", "4", "5, 4, 3 oder 2 mal"],
+      ["20", "Welche Sportart existiert nicht?", "Kaugummiweitspucken", "Tauchschach, Highheels rennen, Kaugummiweitspucken, Bossaball"],
+      ["50", "In welchen Land ist Pferderennen am beliebtesten?", "Australien", "Australien, Japan, Korea oder England"]
     ]
   },
   {
     "kategorie": "Entertainment",
     "fragen": [
-      ["5", "In welchem Jahr wurd das Lied auf YouTube Despacito veröffentlicht?", "2017", "2017, 2019, 2016"],
-      ["10", "Wie viele Teile von der berühmten Filmreihe Hangover gibt es?", "4", "4, 3 oder 2"],
-      ["20", "Wer ist beim Lied „Stuck with you“ von Ariana Grande der feature?", "Justin Bieber", "The Weeknd, Justin Bieber, Eminem"],
-      ["50", "Wie heißt der Schauspieler von Barney Stinson aus der SitCom „How I Met your Mother“?", "Neil Patrick Harris", "Jason Segel, Josh Radnor, Neil Patrick Harris"]
+      ["5", "In welchem Jahr wurd das Lied auf YouTube Despacito veröffentlicht?", "2017", "2017, 2019, 2016, 2018"],
+      ["10", "Wie viele Teile von der berühmten Filmreihe Hangover gibt es?", "3", "5, 4, 3 oder 2"],
+      ["20", "Wer ist beim Lied „Stuck with you“ von Ariana Grande der feature?", "Justin Bieber", "The Weeknd, Justin Bieber, Eminem, JayZ"],
+      ["50", "Wie heißt der Schauspieler von Barney Stinson aus der SitCom „How I Met your Mother“?", "Neil Patrick Harris", "Jason Segel, Josh Radnor, Neil Patrick Harris, Harry Styles"]
     ]
   },
   {
     "kategorie": "Unnutzes Wissen",
     "fragen": [
-      ["5", "Wie viele Züge hat die Standard Vape Elfbar?", "600", "1000, 800, 600"],
-      ["10", "Was kommt nicht in einem Sex on the Beach rein?", "Maracujasaft", "Maracujasaft, Orangensaft, Cranberrysaft"],
-      ["20", "Seit wann gibt es das Dietrich-Keuning-Haus?", "40", "32, 37, 40"],
-      ["50", "Seit wann, ist es Lehrern in Deutschland nichtmehr erlaubt Schüler zu schlagen?", "Antwort", "1973, 1960, 1950"]
+      ["5", "Wie viele Züge hat die Standard Vape Elfbar?", "600", "1000, 800, 600 oder 500"],
+      ["10", "Was kommt nicht in einem Sex on the Beach rein?", "Maracujasaft", "Maracujasaft, Orangensaft, Cranberrysaft, Pfirischlikör"],
+      ["20", "Seit wann gibt es das Dietrich-Keuning-Haus?", "40", "25, 32, 37 oder 40 Jahre"],
+      ["50", "Seit wann, ist es Lehrern in Deutschland nichtmehr erlaubt Schüler zu schlagen?", "1973", "1980, 1973, 1960, 1950"]
 
     ]
   },
   {
     "kategorie": "❓",
     "fragen": [
-      ["5", "Wie viel kostet eine Thunfischdose in Lidl?", "1.49€", "1.49€, 1.69€, 1.79€"],
-      ["10", "Wer gewann die letzte Staffel GNTM?", "Lou-Anne", "Lou-Anne, Alex, Martina"],
-      ["20", "Wie viele Folgen hat Naruto Shippuden?", "500", "500, 600, 400"],
-      ["50", "Wie viele Follower hat Louisa Jindaoui auf Instagram?", "1.8", "1.8 , 1.6, 1.5"]
+      ["5", "Wie viel kostet eine Thunfischdose in Lidl?", "1.69€", "1.29€, 1.49€, 1.69€, 1.79€"],
+      ["10", "Wer gewann die letzte Staffel GNTM?", "Lou-Anne", "Hannah, Lou-Anne, Alex oder Martina"],
+      ["20", "Wie viele Folgen hat Naruto Shippuden?", "500", "400, 500, 600, 700"],
+      ["50", "Wie viele Follower hat Louisa Jindaoui auf Instagram?", "1.8", "1.8 , 1.6, 1.5 oder 1.3 Millionen"]
     ]
   }
 ]

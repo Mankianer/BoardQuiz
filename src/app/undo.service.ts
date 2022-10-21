@@ -5,7 +5,7 @@ import {EventEmitter, Injectable} from '@angular/core';
 })
 export class UndoService {
 
-  private maxUndos = 8;
+  private maxUndos = 50;
 
   private registeredIds: string[] = [];
 

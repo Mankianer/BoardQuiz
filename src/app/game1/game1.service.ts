@@ -110,9 +110,9 @@ export class Game1Service {
   }
 
   useJoker(team: number, joker: 'fon' | 'crowd') {
-    if(!this.game1State.joker[team][joker]) return;
+    // if(!this.game1State.joker[team][joker]) return;
     this.undoService.createSavepoint("joker");
-    this.game1State.joker[team][joker] = false;
+    this.game1State.joker[team][joker] = !this.game1State.joker[team][joker];
   }
 
   loadCardContent(cardId: number): CardContent {

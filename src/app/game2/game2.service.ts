@@ -71,9 +71,9 @@ export class Game2Service {
   }
 
   setJoker(team: number) {
-    if(!this.state.joker[team]) return;
+    // if(!this.state.joker[team]) return;
     this.undoService.createSavepoint("game2 joker");
-    this.state.joker[team] = false;
+    this.state.joker[team] = !this.state.joker[team];
 
   }
 

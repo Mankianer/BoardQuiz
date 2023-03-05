@@ -1,39 +1,39 @@
 [
   {
-    "kategorie": "Sport & Freizeit",
+    "kategorie": "Schätzfragen",
     "fragen": [
-      ["5", "Welche Sportart ist die beliebteste Sportart in England?", "Rugby", "Rugby, Basketball, Tennis oder Rugby"],
-      ["10", "Wie oft gewann Deutschland die Fußball-Männer-Meisterschaft?", "4", "5, 4, 3 oder 2 mal"],
-      ["20", "Welche Sportart existiert nicht?", "Kaugummiweitspucken", "Tauchschach, Highheels rennen, Kaugummiweitspucken, Bossaball"],
-      ["50", "In welchen Land ist Pferderennen am beliebtesten?", "Australien", "Australien, Japan, Korea oder England"]
+      ["5", "Wie viele Hände schüttelt, laut einem Insider, ein US-Präsident pro Jahr?", "65.000", "100.000, 65.000, 30.000, 5.000"],
+      ["10", "Wie viele der 303 Pariser Métro-Stationen wurden nach nur einer Frau benannt?", "1: „Louise Michel“", "100, 15, 7, 1"],
+      ["20", "Wie viele Möglichkeiten gibt es, eine Krawatte zu binden?", "177.147", "177.147, 5.000, 356, 25"],
+      ["50", "Wie viele Menschen sind mindestens notwendig, um eine ‚La-Ola-Welle‘ zu starten?", "35", "10, 35, 50, 70"]
     ]
   },
   {
     "kategorie": "Entertainment",
     "fragen": [
-      ["5", "In welchem Jahr wurd das Lied auf YouTube Despacito veröffentlicht?", "2017", "2017, 2019, 2016, 2018"],
-      ["10", "Wie viele Teile von der berühmten Filmreihe Hangover gibt es?", "3", "5, 4, 3 oder 2"],
-      ["20", "Wer ist beim Lied „Stuck with you“ von Ariana Grande der feature?", "Justin Bieber", "The Weeknd, Justin Bieber, Eminem, JayZ"],
-      ["50", "Wie heißt der Schauspieler von Barney Stinson aus der SitCom „How I Met your Mother“?", "Neil Patrick Harris", "Jason Segel, Josh Radnor, Neil Patrick Harris, Harry Styles"]
+      ["5", "Was ist kein Lied von den Beatles?", "Smells like teen spirit", "Yesterday, Come together, Let it be, Smells like teen spirit"],
+      ["10", "Wer hat 1982 das Lied „Currywurst“ veröffentlicht?", "Herbert Grönemeyer", "Herbert Grönemeyer, Bushido, Blümchen oder Helge Schneider"],
+      ["20", "Wie heißt Nina Chuba mit bürgerlichem Namen?", "Nina Kaiser", "Nina Kaiser, Nina Müller, Nina Knopf oder Nina Kretschner"],
+      ["50", "Wer spielte bei Harry Potter mit?", "Robert Pattinson", "Robert Pattinson, Colin Firth, Benedict Cumberbatch oder Idris Elba"]
     ]
   },
   {
-    "kategorie": "Unnutzes Wissen",
+    "kategorie": "Sport",
     "fragen": [
-      ["5", "Wie viele Züge hat die Standard Vape Elfbar?", "600", "1000, 800, 600 oder 500"],
-      ["10", "Was kommt nicht in einem Sex on the Beach rein?", "Maracujasaft", "Maracujasaft, Orangensaft, Cranberrysaft, Pfirischlikör"],
-      ["20", "Seit wann gibt es das Dietrich-Keuning-Haus?", "40", "25, 32, 37 oder 40 Jahre"],
-      ["50", "Seit wann, ist es Lehrern in Deutschland nichtmehr erlaubt Schüler zu schlagen?", "1973", "1980, 1973, 1960, 1950"]
+      ["5", "Wie lange dauert ein Handballspiel?", "60 Minuten", "90 Minuten, 60 Minuten, 50 Minuten \noder 30 Minuten"],
+      ["10", "Welcher BVB-Spieler spielt im Sturm?", "Karim Adeyemi", "Gregor Kobel, Mats Hummels, Göktan Gürpüz, Karim Adeyemi"],
+      ["20", "Was bedeutet „Field Goal“ beim American Football?", "Einen erfolgreichen Kick durch die Torstangen", "Einen erfolgreichen Kick durch die Torstangen, einen erfolgreichen Pass zum Quarterback, ein Touchdown mit nur einem Pass, das Tackeln des Runningbacks"],
+      ["50", "Welches ist keiner der 9 ursprünglichen Sportarten bei den Olympischen Spielen der Neuzeit (Athen 1896)?", "Reitsport", "Tennis, Ringen, Gewichtheben, Reitsport"]
 
     ]
   },
   {
-    "kategorie": "❓",
+    "kategorie": "Unnützes Wissen",
     "fragen": [
-      ["5", "Wie viel kostet eine Thunfischdose in Lidl?", "1.69€", "1.29€, 1.49€, 1.69€, 1.79€"],
-      ["10", "Wer gewann die letzte Staffel GNTM?", "Lou-Anne", "Hannah, Lou-Anne, Alex oder Martina"],
-      ["20", "Wie viele Folgen hat Naruto Shippuden?", "500", "400, 500, 600, 700"],
-      ["50", "Wie viele Follower hat Louisa Jindaoui auf Instagram?", "1.8", "1.8 , 1.6, 1.5 oder 1.3 Millionen"]
+      ["5", "Welcher ist der salzigste Ozean?", "Atlantik", "Nordpazifik, Atlantik, Indischer Ozean oder Südpazifik"],
+      ["10", "In welchem Land gilt „Jedi“ als offizielle Religion?", "Australien", "Holland, Japan, Australien oder Kanada"],
+      ["20", "Wie lang ist die längste menschliche Zunge der Welt?", "11,4 cm", "10,6 cm, 11,4 cm, 6,1 cm oder 5,8 cm"],
+      ["50", "Wo wurde das World Wide Web (WWW) erfunden?", "in Genf (Schweiz)", "In Cambridge (England), in Tokio (Japan), in Genf (Schweiz) oder in New York (USA)"]
     ]
   }
 ]

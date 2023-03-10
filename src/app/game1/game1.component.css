@@ -15,8 +15,8 @@
 .question {
   position: absolute;
   bottom: 2%;
-  left: 0%;
-  width: 100%;
+  left: 1%;
+  width: 97%;
   height: 13%;
   display: flex;
   justify-content: center; /* align horizontal */

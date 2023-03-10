@@ -2,8 +2,8 @@
   {
     "kategorie": "Schätzfragen",
     "fragen": [
-      ["5", "Wie viel kostet ein Kräuter\nBaguette?", "1,19€", "0,59€, 0,79€, 1,19€ oder\n1,36€"],
-      ["10", "Wie viele der 303 Pariser Métro-Stationen wurden nach nur einer Frau benannt?", "1: „Louise Michel“", "100, 15, 7, 1"],
+      ["5", "Wie viel kostet ein Kräuter\nBaguette im Lidl?", "1,19€", "0,59€, 0,79€, 1,19€ oder\n1,36€"],
+      ["10", "Wie viele der 303 Pariser Métro-Stationen wurden nach einer Frau benannt?", "1: „Louise Michel“", "100, 15, 7, 1"],
       ["20", "Wie viele Hände schüttelt,\nlaut einem Insider, ein US-\nPräsident pro Jahr?", "65.000", "65.000, 100.000, 30.000,\n5.000"],
       ["50", "Wie viele Menschen sind mindestens notwendig, um eine ‚La-Ola-Welle‘ zu starten?", "35", "10, 35, 50, 70"]
     ]
@@ -22,8 +22,8 @@
     "fragen": [
       ["5", "Wie lange dauert ein Handballspiel?", "60 Minuten", "90 Minuten, 60 Minuten, 50 Minuten \noder 30 Minuten"],
       ["10", "Welcher BVB-Spieler spielt im Sturm?", "Karim Adeyemi", "Gregor Kobel, Mats Hummels, Göktan Gürpüz, Karim Adeyemi"],
-      ["20", "Was bedeutet „Field Goal“ beim American Football?", "Einen erfolgreichen Kick durch die Torstangen", "Einen erfolgreichen Kick durch die Torstangen, einen erfolgreichen Pass zum Quarterback, ein Touchdown mit nur einem Pass, das Tackeln des Runningbacks"],
-      ["50", "Welches ist keiner der 9 ursprünglichen Sportarten bei den Olympischen Spielen der Neuzeit (Athen 1896)?", "Reitsport", "Tennis, Ringen, Gewichtheben, Reitsport"]
+      ["20", "Was bedeutet „Field Goal“ beim American Football?", "Einen erfolgreichen Kick durch die Torstangen", "Kick durch die Torstangen, Pass zum Quarterback, Touchdown ohne Tackle, Tackeln des Runningbacks"],
+      ["50", "Welches ist keiner der 9 ursprünglichen Sportarten der Olympischen Spiele", "Reitsport", "Tennis, Ringen, Gewichtheben, Reitsport"]
 
     ]
   },

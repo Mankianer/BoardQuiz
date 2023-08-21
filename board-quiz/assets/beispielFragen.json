@@ -2,38 +2,37 @@
   {
     "kategorie": "Schätzfragen",
     "fragen": [
-      ["5", "Wie viel kostet ein Kräuter\nBaguette im Lidl?", "1,19€", "0,59€, 0,79€, 1,19€ oder\n1,36€"],
-      ["10", "Wie viele der 303 Pariser Métro-Stationen wurden nach einer Frau benannt?", "1: „Louise Michel“", "100, 15, 7, 1"],
-      ["20", "Wie viele Hände schüttelt,\nlaut einem Insider, ein US-\nPräsident pro Jahr?", "65.000", "65.000, 100.000, 30.000,\n5.000"],
-      ["50", "Wie viele Menschen sind mindestens notwendig, um eine ‚La-Ola-Welle‘ zu starten?", "35", "10, 35, 50, 70"]
+      ["5", "Wie hoch ist der Wasseranteil einer Aubergine?", "93%", "13%, 43%, 53%, 93%"],
+      ["10", "Wie groß muss ein See sein damit er als See bezeichnet werden darf?", "1ha (10.000m²)", "spielt keine Rolle, 1ha (10.000m²), 5ha (50.000m²), 10ha (100.000m²)"],
+      ["20", "Wie lang ist die längste Limousine der Welt (inklusive Swimmingpool und Helikopterlandeplatz)?", "31m", "12m, 31m, 55m, 104m"],
+      ["50", "Wie lang ist die Linie die man mit einer durchschnittlichen Bleistiftmine durchzeichnen könnte?", "56km", "4km, 23km, 56km, 69km"]
     ]
   },
   {
     "kategorie": "Entertainment",
     "fragen": [
-      ["5", "Wie heißt der Sohn von\nNaruto?", "Boruto", "Nagato, Boruto, Minato\noder Kitaro"],
-      ["10", "Wie viele Staffeln Vinland\nSaga gibt es?", "2", "1, 2, 3, oder 4"],
-      ["20", "Wie heißt Nina Chuba mit bürgerlichem Namen?", "Nina Kaiser", "Nina Kaiser, Nina Müller, Nina Knopf oder Nina Kretschner"],
-      ["50", "Wer spielte bei Harry Potter mit?", "Robert Pattinson", "Robert Pattinson, Colin Firth, Benedict Cumberbatch oder Idris Elba"]
+      ["5", "Wie viele Staffeln hat die Sitcom „How I Met Your Mother“?", "9 Staffeln", "4 Staffeln, 7 Staffeln, 9 Staffeln, 12 Staffeln"],
+      ["10", "Welches Tier ist der Freund und Helfer „Rufus“ in der Serie Kim Possible?", "Nacktmull", "Ratte, Eichhörnchen, Farbmaus, Nacktmull"],
+      ["20", "Welcher Schauspieler spielt den Werwolf Jacob Black aus Twilight?", "Taylor Lautner", "Taylor Lautner, Tommy Lee, Edward Cullen, Adam Sandler"],
+      ["50", "Wie heißt der deutsche Künstler „Luciano“ mit bürgerlichem Namen?", "Patrick Großmann", "Luke Lopez, Patrick Großmann, Luciano Paulo, Jannes Lehmann"]
     ]
   },
   {
     "kategorie": "Sport",
     "fragen": [
-      ["5", "Wie lange dauert ein Handballspiel?", "60 Minuten", "90 Minuten, 60 Minuten, 50 Minuten \noder 30 Minuten"],
-      ["10", "Welcher BVB-Spieler spielt im Sturm?", "Karim Adeyemi", "Gregor Kobel, Mats Hummels, Göktan Gürpüz, Karim Adeyemi"],
-      ["20", "Was bedeutet „Field Goal“ beim American Football?", "Einen erfolgreichen Kick durch die Torstangen", "Kick durch die Torstangen, Pass zum Quarterback, Touchdown ohne Tackle, Tackeln des Runningbacks"],
-      ["50", "Welches ist keiner der 9 ursprünglichen Sportarten der Olympischen Spiele", "Reitsport", "Tennis, Ringen, Gewichtheben, Reitsport"]
-
+      ["5", "Wo wurde NBA Star Michael Jordan geboren?", "New York", "New York, Chicago, Michigan, Kalifornien"],
+      ["10", "Wie viele Züge werden mindestens benötigt um jemanden Schachmatt zu setzen?", "4 Züge", "3 Züge, 4 Züge, 7 Züge, 11 Züge"],
+      ["20", "Wie ging das Spiel BVB gegen Mainz um die Meisterschaft 2023 aus?", "BVB 2:2 MAINZ", "BVB 1:2 MAINZ, BVB 2:2 MAINZ, BVB 2:3 MAINZ, BVB 4:2 MAINZ"],
+      ["50", "Welche Sportart ist in Indonesien die lokal-beliebteste?", "Badminton", "Tennis, Basketball, Badminton, Triathlon"]
     ]
   },
   {
     "kategorie": "Unnützes Wissen",
     "fragen": [
-      ["5", "Welcher ist der salzigste Ozean?", "Atlantik", "Nordpazifik, Atlantik, Indischer Ozean oder Südpazifik"],
-      ["10", "In welchem Land gilt „Jedi“ als offizielle Religion?", "Australien", "Holland, Japan, Australien oder Kanada"],
-      ["20", "Wie lang ist die längste menschliche Zunge der Welt?", "11,4 cm", "10,6 cm, 11,4 cm, 6,1 cm oder 5,8 cm"],
-      ["50", "Wo wurde das World Wide Web (WWW) erfunden?", "in Genf (Schweiz)", "In Cambridge (England), in Tokio (Japan), in Genf (Schweiz) oder in New York (USA)"]
+      ["5", "Welche Farbe hat die Muttermilch von Nilpferden?", "Rosa", "Weiß, Gelb, Rosa, Hellblau"],
+      ["10", "Welches der Tiere hat Augen die größer sind als das eigene Gehirn?", "Strauß", "Panda, Koboldmaki, Reh, Strauß"],
+      ["20", "Wie heißt die Mutter von Nicki Lauda?", "Elisabeth", "Elisabeth, Lolita, Alice, Lillian"],
+      ["50", "Wie hoch kann ein Pinguin durchschnittlich springen?", "180cm", "sie springen nicht, 60cm, 120cm, 180cm"]
     ]
   }
 ]

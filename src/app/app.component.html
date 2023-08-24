@@ -3,7 +3,7 @@
   <app-start-screen *ngIf="gameKeeper.round == 0"></app-start-screen>
   <app-game1 *ngIf="gameKeeper.round == 1" ></app-game1>
   <app-game2 *ngIf="gameKeeper.round == 2" rounds="24"></app-game2>
-  <app-game2 *ngIf="gameKeeper.round == 3" rounds="4"></app-game2>
+  <app-game2 *ngIf="gameKeeper.round == 3" rounds="16" [points]="[20]"></app-game2>
   <app-game2 *ngIf="gameKeeper.round == 4" rounds="4" force-winner="true" [points]="[50,50,30,80]" [hasTimer]=true></app-game2>
   <app-transition-screen *ngIf="gameKeeper.round == 5"></app-transition-screen>
   <app-transition-screen *ngIf="gameKeeper.round ==-1"></app-transition-screen>

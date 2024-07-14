@@ -2,37 +2,37 @@
   {
     "kategorie": "Schätzfragen",
     "fragen": [
-      ["5", "Wie hoch ist der Wasseranteil einer Aubergine?", "93%", "13%, 43%, 53%, 93%"],
-      ["10", "Wie groß muss ein See sein damit er als See bezeichnet werden darf?", "1ha (10.000m²)", "spielt keine Rolle, 1ha (10.000m²), 5ha (50.000m²), 10ha (100.000m²)"],
-      ["20", "Wie lang ist die längste Limousine der Welt (inklusive Swimmingpool und Helikopterlandeplatz)?", "31m", "12m, 31m, 55m, 104m"],
-      ["50", "Wie lang ist die Linie die man mit einer durchschnittlichen Bleistiftmine durchzeichnen könnte?", "56km", "4km, 23km, 56km, 69km"]
+      ["5", "Wie viele Menschen lebten in 2022 circa in Deutschland?", "84mio", "84mio, 71mio, 51mio, 112mio"],
+      ["10", "Wie hoch ist das weltweit höchste Gebäude (Burj Khalifa)?", "828m", "905m, 850m, 787m, 828m"],
+      ["20", "Wie viele Tonnen kann ein ausgewachsener Blauwal wiegen?", "200t", "200t, 300t, 500t, 1200t"],
+      ["50", "Wie lange würde es bei konstanten 100 km/h von der Erde zur Sonne dauern?", "170 Jahre", "170 Jahre, 18 Jahre, 20 Wochen, 2 Monate"]
     ]
   },
   {
     "kategorie": "Entertainment",
     "fragen": [
-      ["5", "Wie viele Staffeln hat die Sitcom „How I Met Your Mother“?", "9 Staffeln", "4 Staffeln, 7 Staffeln, 9 Staffeln, 12 Staffeln"],
-      ["10", "Welches Tier ist der Freund und Helfer „Rufus“ in der Serie Kim Possible?", "Nacktmull", "Ratte, Eichhörnchen, Farbmaus, Nacktmull"],
-      ["20", "Welcher Schauspieler spielt den Werwolf Jacob Black aus Twilight?", "Taylor Lautner", "Taylor Lautner, Tommy Lee, Edward Cullen, Adam Sandler"],
-      ["50", "Wie heißt der deutsche Künstler „Luciano“ mit bürgerlichem Namen?", "Patrick Großmann", "Luke Lopez, Patrick Großmann, Luciano Paulo, Jannes Lehmann"]
+      ["5", "Wie heißt der erste Teil der „Der Herr der Ringe“ Trilogie?", "Die Gefährten", "Die 2 Türme, Rückkehr des Königs, Die Gefährten, Der eine Ring"],
+      ["10", "Wie heißt der Krebs-Arzt aus der Serie „Futurama“?", "Zoidberg", "Bertram, Crabb, Zoidberg, Clammy"],
+      ["20", "Welches Datum wird von englischsprachigen Medien oft als 9/11 bezeichnet?", "11. Sep. 2001", "11. Sep. 2011, 09. Nov. 2001, 11. Sep. 2001, 09. Nov. 2011"],
+      ["50", "Welcher Musiker hatte zwei unterschiedlich aussehende Augenfarben?", "David Bowie", "John Denver, Freddie Mercury, Joe Cocker, David Bowie"]
     ]
   },
   {
     "kategorie": "Sport",
     "fragen": [
-      ["5", "Wo wurde NBA Star Michael Jordan geboren?", "New York", "New York, Chicago, Michigan, Kalifornien"],
-      ["10", "Wie viele Züge werden mindestens benötigt um jemanden Schachmatt zu setzen?", "4 Züge", "3 Züge, 4 Züge, 7 Züge, 11 Züge"],
-      ["20", "Wie ging das Spiel BVB gegen Mainz um die Meisterschaft 2023 aus?", "BVB 2:2 MAINZ", "BVB 1:2 MAINZ, BVB 2:2 MAINZ, BVB 2:3 MAINZ, BVB 4:2 MAINZ"],
-      ["50", "Welche Sportart ist in Indonesien die lokal-beliebteste?", "Badminton", "Tennis, Basketball, Badminton, Triathlon"]
+      ["5", "Wo fanden die Schwimmweltmeisterschaften 2009 statt?", "Rom", "Budapest, Tokio, Istanbul, Rom"],
+      ["10", "Aus welchem Land stammt der Fußballer Claudio Pizzaro?", "Peru", "Brasilien, Argentinien, Italien, Peru"],
+      ["20", "Wie ist die Spielzeit beim Feldhockey?", "2x35min", "2x35min, 2x20min, 3x20min, 2x45min"],
+      ["50", "Welcher Profigolfer gewann die U.S Open 2007 und das Masters 2009?", "Angel Cabrera", "Tiger Woods, Angel Cabrera, Serena Williams, Nick Faldo"]
     ]
   },
   {
     "kategorie": "Unnützes Wissen",
     "fragen": [
-      ["5", "Welche Farbe hat die Muttermilch von Nilpferden?", "Rosa", "Weiß, Gelb, Rosa, Hellblau"],
-      ["10", "Welches der Tiere hat Augen die größer sind als das eigene Gehirn?", "Strauß", "Panda, Koboldmaki, Reh, Strauß"],
-      ["20", "Wie heißt die Mutter von Nicki Lauda?", "Elisabeth", "Elisabeth, Lolita, Alice, Lillian"],
-      ["50", "Wie hoch kann ein Pinguin durchschnittlich springen?", "180cm", "sie springen nicht, 60cm, 120cm, 180cm"]
+      ["5", "Welcher Nachrichtensender hat in Deutschland die meisten Besucher?", "spiegel.de", "focus.de, bild.de, n-tv.de, spiegel.de"],
+      ["10", "Wie heißt Googles Version des Sprachmodells ChatGPT?", "Gemini", "Gemini, Pisces, Taurus, Libra"],
+      ["20", "Wie heißt der Twitter Vogel?", "Larry", "Arnold, Larry, Tom, Er hat keinen Namen"],
+      ["50", "Welche Auszeichnung erhielt A. Merkel von dem US-Magazin „Time“ in 2015?", "Person des Jahres", "Person des Jahres, Unternehmer des Jahres, Friedensnobelpreis, Frau des Jahrhunderts"]
     ]
   }
 ]

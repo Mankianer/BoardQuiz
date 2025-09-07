@@ -1,38 +1,38 @@
 [
   {
-    "kategorie": "Mensch",
+    "kategorie": "Digitales",
     "fragen": [
-      ["10", "Welche Farbe hat der oberste Streifen der amerikanischen Flagge?", "Rot", "Blau, Weiß, Schwarz, Rot"],
-      ["5", "Welchen Namen erhält ein Mensch, wenn der jeweils verbreitetste Vor- und Nachname der Welt kombiniert wird?", "Mohammed Chang", "Li Garcia, Mohammed Chang, José Schmitt, Thomas Abdul"],
-      ["20", "Wie heißt der Gott der Todesriten in der ägyptischen Mythologie?", "Anubis", "Osiris, Anubis, Isis, Horus"],
-      ["50", "Was bedeutet das lateinische Wort \"Pollex\"?", "Daumen", "Daumen, Himmelsachse, Wirbel, Gesetz"]
+      ["5", "Wie heißt die Prinzessin, die Mario oft retten muss?", "Peach", "Daisy, Peach, Zelda, Pauline"],
+      ["10", "Welche Firma stellt die PlayStation-Konsolen her?", "Sony", "Nintendo, Microsoft, Sony, Sega"],
+      ["20", "Welches Entwicklerstudio entwickelte Fortnite?", "Epic Games", "Bethesda, Naughty Dog, Epic Games, Ubisoft"],
+      ["50", "Wofür steht die Abkürzung „USB“?", "Universal Serial Bus", "Universal Serial Bus, United System Backup, Unique Software Base, Universal Signal Base"]
     ]
   },
   {
-    "kategorie": "Entertainment",
+    "kategorie": "Kunst und Kultur",
     "fragen": [
-      ["5", "Wie heißt der Entwaffnungszauber aus Harry Potter?", "Expelliarmus", "Expecto Patronum, Expelliarmus, Nox, Serpensortia"],
-      ["10", "Wie viele Pokémon gab es in der ersten Generation?", "151", "122, 94, 101, 151"],
-      ["20", "Wie viele Oscar-Nominierungen hatte Leonardo DiCaprio insgesamt?", "6", "8, 6, 5, 7"],
-      ["50", "Welcher Musiker hatte zwei unterschiedlich aussehende Augenfarben?", "David Bowie", "Johnny Cash, Freddie Mercury, Joe Jonas, David Bowie"]
+      ["5", "Wer malte die Mona Lisa?", "Leonardo Da Vinci", "Leonardo Da Vinci, Claude Monet, Vincent van Gogh, Pablo Picasso"],
+      ["10", "Welcher Schriftsteller schrieb „Faust“?", "Johann Wolfgang von Goethe", "Friedrich Schiller, Heinrich Heine, Johann Wolfgang von Goethe, Thomas Mann"],
+      ["20", "Wie nennt man die Technik, bei der kleine Steine und Glasstücke zu einem Bild zusammengesetzt werden?", "Mosaik", "Mosaik, Mandala, Fresco, Aquarell"],
+      ["50", "Welches dieser Bauwerke ist ein Beispiel für gotische Architektur?", "Notre-Dame de Paris", "Petersdom, Notre-Dame de Paris, Kolosseum, Parthenon"]
     ]
   },
   {
-    "kategorie": "Unnützes Wissen",
+    "kategorie": "Einmal um die Welt…",
     "fragen": [
-      ["5", "Welches Studium hat Angela Merkel abgeschlossen?", "Physik", "Politik, Biologie, Wirtschaft, Physik"],
-      ["10", "Wie nennt man eine Gruppe von Walen?", "Schule", "Walte, Mob, Rudel, Schule"],
-      ["20", "Welche Farbe hat die Nationalblume von Wales?", "Gelb", "Gelb, Rot, Blau, Lila"],
-      ["50", "Wie heißt der Vogel des Jahres 2025?", "Hausrotschwanz", "Alpenbraunelle, Hausrotschwanz, Gebirgsstelze, Mittelspecht"]
+      ["5", "Was ist das kleinste Land der Welt?", "Vatikan", "Monaco, Lichtenstein, Vatikan, Luxemburg"],
+      ["10", "Welcher der folgenden ist der höchste Berg in Afrika?", "Kilimandscharo", "Uluru, Kilimandscharo, K2, Mount Meru"],
+      ["20", "Welches Tier kommt ausschließlich in Neuseeland vor?", "Kiwi", "Kiwi, Tapire, Känguru, Koala"],
+      ["50", "Für welche Sehenswürdigkeit ist Peru bekannt?", "Machu Picchu", "Chichén Itzá, Cristo Redentor, Machu Picchu, Mount Rushmore"]
     ]
   },
   {
-    "kategorie": "Natur",
+    "kategorie": "Sport",
     "fragen": [
-      ["5", "Wie wird der Bereich im Gehirn genannt, der vor allem mit Furcht assoziiert wird?", "Amygdala", "Hypothalamus, Amygdala, Corpus Callosum, Pons"],
-      ["10", "Womit ist die Kühlleistung eines Baums am besten vergleichbar?", "10 Klimaanlagen", "10 Klimaanlagen, 3 Ventilatoren, 20 Kühlschränke, 1 Sack Eis"],
-      ["20", "Wie wird der Buntbarsch Neolamprologus pulcher noch genannt?", "Kaiserin von Zambia", "Prinzessin von Osaka, Kaiserin von Zambia, Fürst von Rostock, Emir von Dubai"],
-      ["50", "Wie nennt man die sexuelle Vorliebe für Bäume?", "Dendrophilie", "Dendrophilie, Ramusarbor, Cupitumdentra, Arborphilie"]
+      ["5", "Wie ist die Spielzeit beim Handball?", "2x30 min", "4x15 min, 3x20 min, 2x45 min, 2x30 min"],
+      ["10", "Welcher Spieler gewann 2024 den Ballon d’Or?", "Rodi", "Rodri, Harry Kane, Lamine Yamal, Kylian Mbappé"],
+      ["20", "Was bedeutet der Ballettbegriff „plié“?", "Beugen der Knie", "Springen, Beugen der Knie, Rechtsseitige Drehung, Streckung des gesamten Körpers"],
+      ["50", "Bis wieviel Kilogramm liegt das obere Limit im Supermittelgewicht beim Boxen?", "76,203kg", "82,465kg, 76,203kg, 54,908kg, 68,306kg"]
     ]
   }
 ]
